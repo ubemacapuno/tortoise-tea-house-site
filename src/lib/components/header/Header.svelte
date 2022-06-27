@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import logo from './placeholder-logo.svg';
+	import Phone from '$lib/images/icons/phone.svg'
 	import largeLogo from './placeholder-logo-big.svg';
 </script>
 
@@ -13,6 +14,7 @@
 		</div>
 		<nav>
 			<ul>
+				<li><a sveltekit:prefetch href="/">About</a></li>
 				<li><a sveltekit:prefetch href="/">Menu</a></li>
 				<li><a sveltekit:prefetch href="/">Contact</a></li>
 			</ul>
@@ -22,10 +24,19 @@
 	<div class="header-body">
 		<h2>Tortoise Tea House</h2>
 		<img class="large-logo" src={largeLogo} alt="Tortoise Tea House Logo - Large" />
+
 		<!-- Cards -->
-		<a class="card-detail" title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8"><p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p></a>
+		
 		<p class="card-detail">Wed - Sun: 12pm  - 8pm</p>
 		<p class="card-detail">Closed Tuesday</p>
+		<a class="card-detail-alternate" title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8"><p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p></a>
+		
+		<a href="tel:1-602-612-2363" class="phone-btn" title="Give us a call!">
+			<img class="fas fa-phone-alt" src={Phone} alt="Tortoise Tea House Phone" aria-hidden="true">
+			<span class="phone-number">(602) 612-2363</span>
+		</a>
+
+
 	</div>
 
 </header>
@@ -69,7 +80,7 @@ h2 {
 }
 
 .large-logo {
-	max-width: 300px;
+	max-width: 270px;
 	margin-bottom: 16px;
 	/* background-color: white; */
 }
@@ -87,14 +98,51 @@ h2 {
 	height: 100%;
 }
 
+.location-card {
+	background-color: var(--primary-color);
+	color: white;
+}
+
 .location-card::before {
 	content: url('$lib/images/location/location-pin.svg');
+}
+
+span {
+	margin-top: 1rem;
+	color: black;
+}
+
+.card-detail {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 250px;
+	padding: 5px;
+	margin: 10px;
+	background-color: white;
+}
+
+.card-detail-alternate {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 250px;
+	padding: 5px;
+	margin: 10px;
+	background-color: var(--primary-color);
 }
 
 .corner img {
 	width: 2em;
 	height: 2em;
 	object-fit: contain;
+}
+
+.phone-btn {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 250px;
+	justify-content: space-around;
+	margin: 10px;
 }
 
 nav {
@@ -138,15 +186,6 @@ nav a {
 
 a:hover, img:hover {
 	color: var(--accent-color);
-}
-
-.card-detail {
-	border: 1px solid black;
-	border-radius: 10px;
-	width: 250px;
-	padding: 5px;
-	margin: 10px;
-	background-color: white;
 }
 
 </style>
