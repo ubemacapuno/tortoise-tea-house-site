@@ -37,6 +37,7 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		background-color: var(--primary-color)
 	}
 
 	.corner {

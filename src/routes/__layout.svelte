@@ -1,17 +1,20 @@
 <script lang="ts">
-	import Header from '$lib/header/Header.svelte';
+	import Header from '$lib/components/header/Header.svelte';
+	import Footer from '$lib/components/footer/Footer.svelte';
+	import Contact from '$lib/components/contact/Contact.svelte';
+	import Hero from '$lib/components/hero/Hero.svelte'
 	import '../app.css';
 </script>
 
 <Header />
+<Hero />
 
 <main>
 	<slot />
 </main>
 
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
+<Contact />
+<Footer />
 
 <style>
 	main {
@@ -23,23 +26,5 @@
 		max-width: 1024px;
 		margin: 0 auto;
 		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
 	}
 </style>
