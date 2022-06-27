@@ -7,20 +7,13 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Tortoise Tea House</title>
+	<meta name="Tortoise Tea House Main Page" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<h1>
-		This is the Index page. Put drinks and menu stuff here.
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<!-- <Counter /> -->
+<section class="page-wrapper">
+	<p>Test	</p>
+	<p>try editing <strong>src/routes/index.svelte</strong></p>
 </section>
 
 <style>
@@ -29,26 +22,5 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 1;
 	}
-
-	h1 {
-		width: 100%;
-	}
-
-	/* .welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	} */
 </style>
