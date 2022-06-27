@@ -1,4 +1,3 @@
-@import '@fontsource/fira-mono';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 html {font-size: 100%;} /*16px*/
 
@@ -7,10 +6,11 @@ html {font-size: 100%;} /*16px*/
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
-	--secondary-color: #d0dde9;
-	--tertiary-color: #edf0f8;
-	--accent-color: #ff3e00;
+	--primary-color: #D8E2DC;
+	--secondary-color: #FFE5D9;
+	--tertiary-color: #FFCAD4;
+	--accent-color: #F4ACB7;
+	--secondary-accent-color: #9D8189;
 	--heading-color: rgba(0, 0, 0, 0.7);
 	--text-color: #444444;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
