@@ -1,125 +1,152 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
+	import logo from './placeholder-logo.svg';
+	import largeLogo from './placeholder-logo-big.svg';
 </script>
 
-<header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
+<header class="wrapper">
+	<div class="header-top">
+		<div class="corner">
+			<a href="/">
+				<img src={logo} alt="Tortoise Tea House Logo" />
+			</a>
+		</div>
+		<nav>
+			<ul>
+				<li><a sveltekit:prefetch href="/">Menu</a></li>
+				<li><a sveltekit:prefetch href="/">Contact</a></li>
+			</ul>
+		</nav>
 	</div>
 
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.url.pathname === '/about'}>
-				<a sveltekit:prefetch href="/about">About</a>
-			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a sveltekit:prefetch href="/todos">Todos</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav>
-
-	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+	<div class="header-body">
+		<h2>Tortoise Tea House</h2>
+		<img class="large-logo" src={largeLogo} alt="Tortoise Tea House Logo - Large" />
+		<!-- Cards -->
+		<a class="card-detail" title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8"><p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p></a>
+		<p class="card-detail">Wed - Sun: 12pm  - 8pm</p>
+		<p class="card-detail">Closed Tuesday</p>
 	</div>
+
 </header>
 
 <style>
-	header {
-		display: flex;
-		justify-content: space-between;
-		background-color: var(--primary-color)
-	}
 
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
+header {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--secondary-color);
+	/* background: url('$lib/images/background/wiggle.svg'); */
+}
 
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
+.wrapper {
+	margin-bottom: 100px;
+}
 
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
+.header-top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: var(--primary-color);
+}
 
-	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
+.header-body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
+h2, p{
+	text-align: center;
+}
 
-	path {
-		fill: var(--background);
-	}
+h2 {
+	background-color: white;
+}
 
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
+.large-logo {
+	max-width: 300px;
+	margin-bottom: 16px;
+	/* background-color: white; */
+}
 
-	li {
-		position: relative;
-		height: 100%;
-	}
+.corner {
+	width: 3em;
+	height: 3em;
+}
 
-	li.active::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--accent-color);
-	}
+.corner a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
 
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 1em;
-		color: var(--heading-color);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
+.location-card::before {
+	content: url('$lib/images/location/location-pin.svg');
+}
 
-	a:hover {
-		color: var(--accent-color);
-	}
+.corner img {
+	width: 2em;
+	height: 2em;
+	object-fit: contain;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	--background: rgba(255, 255, 255, 0.7);
+}
+
+
+ul {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	height: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	background: var(--background);
+	background-size: contain;
+}
+
+li {
+	position: relative;
+	height: 100%;
+}
+
+nav a {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	padding: 0 1em;
+	color: var(--heading-color);
+	font-weight: 700;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	transition: color 0.2s linear;
+}
+
+a:hover, img:hover {
+	color: var(--accent-color);
+}
+
+.card-detail {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 250px;
+	padding: 5px;
+	margin: 10px;
+	background-color: white;
+}
+
 </style>

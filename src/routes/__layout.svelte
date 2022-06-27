@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/footer/Footer.svelte';
-	import Contact from '$lib/components/contact/Contact.svelte';
+	import Contact from '$lib/components/contact/contact.svelte';
 	import Hero from '$lib/components/hero/Hero.svelte'
 	import '../app.css';
 </script>
@@ -18,7 +18,6 @@
 
 <style>
 	main {
-		flex: 1;
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;

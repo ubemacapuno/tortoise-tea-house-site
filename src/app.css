@@ -6,7 +6,7 @@ html {font-size: 100%;} /*16px*/
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
-	--primary-color: #D8E2DC;
+	--primary-color: #378e5a;
 	--secondary-color: #FFE5D9;
 	--tertiary-color: #FFCAD4;
 	--accent-color: #F4ACB7;
@@ -18,7 +18,24 @@ html {font-size: 100%;} /*16px*/
 	--column-margin-top: 4rem;
 }
 
-p {margin-bottom: 1rem;}
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+a {
+	text-decoration: none;
+}
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
@@ -41,3 +58,35 @@ h4 {font-size: 1.563rem;}
 h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
+
+/*         */
+/* Media Query */
+/*         */
+
+@media (min-width: 900px) {
+	h1 {
+		font-size: 4.8rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	h3 {
+		font-size: 2rem;
+	}
+	h4 {
+		font-size: 1.8rem;
+	}
+	h5 {
+		font-size: 1.4rem;
+	}
+}
+
+/*         */
+/* Utility */
+/*         */
+
+.page-wrapper {
+	padding: 0 20px 20px;
+	margin: 0 auto;
+	max-width: 1200px;
+}
