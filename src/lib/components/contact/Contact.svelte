@@ -34,7 +34,8 @@
 		
 		<!-- "/static/netlify-form-helper.html" -->
 
-		<form name="contact-form-test" method="POST" data-netlify="true">
+		<form name="contact-form-test" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+			<input type="hidden" name="form-name" value="test" />
 			<p>
 			  <label>Your Name: <input type="text" name="name" /></label>
 			</p>
@@ -46,6 +47,7 @@
 			<p>
 			  <label>Message: <textarea name="message"></textarea></label>
 			</p>
+			<div data-netlify-recaptcha="true"></div>
 			<p>
 			  <button type="submit">Send</button>
 			</p>
