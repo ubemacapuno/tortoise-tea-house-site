@@ -3,17 +3,18 @@
 	import Instagram from '$lib/images/socials/socials-instagram.svg'
 	import Yelp from '$lib/images/socials/socials-yelp.svg'
 </script> -->
-
-<section class="page-wrapper">
-	<footer>
-		<p>(602) 612-2363</p>
-		<p>2418 E Greenway Rd Phoenix, AZ 85032</p>
-		<p class="copyright">© 2022 Tortoise Tea House</p>
-	</footer>
+<section class="footer-section">
+	<section>
+		<footer>
+			<p>(602) 612-2363</p>
+			<p>2418 E Greenway Rd Phoenix, AZ 85032</p>
+			<p class="copyright">© 2022 Tortoise Tea House</p>
+		</footer>
+	</section>
 </section>
 
 <style>
-	section {
+	.footer-section {
 		background-color: var(--primary-color);
 	}
 

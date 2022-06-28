@@ -18,15 +18,15 @@
 </script>
 
 
-<section class="page-wrapper">
-	<section class="contact-component">
+<section class="contact-component">
+	<section>
 		<h2>Contact</h2>
 		
 		<!-- Social Media -->
 
 		<ul class="icons">
-			<li><a class="icon" target="_blank" href=""><img src={Facebook} alt="Facebook Logo"></a></li>
-			<li><a class="icon" target="_blank" href=""><img src={Instagram} alt="Instagram Logo"></a></li>
+			<li><a class="icon" target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img src={Facebook} alt="Facebook Logo"></a></li>
+			<li><a class="icon" target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img src={Instagram} alt="Instagram Logo"></a></li>
 			<li><a class="icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img src={Yelp} alt="YelpLogo"></a></li>
 		</ul>
 
@@ -59,16 +59,13 @@
 </section>
 
 <style>
-	.page-wrapper {
-		background-color: var(--secondary-color);
-	}
     .contact-component {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 40px;
 		text-align: center;
+		background-color: var(--secondary-color)
 	}
 
 	.icons {
