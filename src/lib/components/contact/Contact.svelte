@@ -31,25 +31,24 @@
 		</ul>
 
 		<p>Let us know how we're doing!</p>
-		<form name="contact" method="POST" data-netlify="true">
-			<div class="fields">
-				<div class="field half">
-					<p class="contact-form">Name (required)</p>
-					<input type="text" name="name" id="name" required/>
-				</div>
-				<div class="field half">
-					<p class="contact-form">Email (required)</p>
-					<input type="email" name="email" id="email" required/>
-				</div>
-				<div class="field">
-					<p class="contact-form">Message</p>
-					<textarea name="message" id="message" rows="4" required></textarea>
-				</div>
-				<div class="field">
-					<div data-netlify-recaptcha="true"></div>
-				</div>
-				<button type="submit" class="button">Send</button>
-			</div>
+		
+		<!-- "/static/netlify-form-helper.html" -->
+
+		<form name="test" method="post" netlify netlify-honeypot="bot-field" action="/success">
+			<input type="hidden" name="form-name" value="test" />
+			<input type="text" name="bot-field" />
+			<p>
+				<label>Your Name: <input type="text" name="name" /></label>
+			</p>
+			<p>
+				<label>Your Email: <input type="email" name="email" /></label>
+			</p>
+			<p>
+				<label>Message: <textarea name="message" /></label>
+			</p>
+			<p>
+				<button type="submit">Send</button>
+			</p>
 		</form>
 
 		<h2>Location</h2>
