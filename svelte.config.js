@@ -9,7 +9,12 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-
+		prerender: {
+			crawl: true,
+			enabled: true,
+			onError: 'continue',
+			entries: ['*']
+		},
 		// Override http methods in the Todo forms
 		methodOverride: {
 			allowed: ['PATCH', 'DELETE']

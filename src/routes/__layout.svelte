@@ -1,4 +1,4 @@
-<script lang="ts">
+<script context="module" lang="ts">
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/footer/Footer.svelte';
 	import Contact from '$lib/components/contact/Contact.svelte';

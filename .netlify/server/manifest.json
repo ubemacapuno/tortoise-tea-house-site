@@ -23,16 +23,16 @@
       "_index-1259f1f6.js"
     ],
     "css": [
-      "assets/entries/pages/__layout.svelte-009f65e5.css"
+      "assets/entries/pages/__layout.svelte-fa262078.css"
     ],
     "assets": [
+      "assets/socials-yelp-8718eb3a.svg",
+      "assets/socials-instagram-e289a92f.svg",
+      "assets/socials-facebook-511035d2.svg",
       "assets/placeholder-logo-eda9c675.svg",
       "assets/phone-9940e229.svg",
       "assets/placeholder-logo-big-38058311.svg",
-      "assets/location-pin-60a7e739.svg",
-      "assets/socials-yelp-8718eb3a.svg",
-      "assets/socials-instagram-e289a92f.svg",
-      "assets/socials-facebook-511035d2.svg"
+      "assets/location-pin-60a7e739.svg"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
