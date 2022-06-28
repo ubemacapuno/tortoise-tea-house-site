@@ -1,0 +1,87 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index-1259f1f6.js"
+    ],
+    "dynamicImports": [
+      "src/hooks.ts"
+    ]
+  },
+  "src/routes/todos/index.ts": {
+    "file": "entries/endpoints/todos/index.ts.js",
+    "src": "src/routes/todos/index.ts",
+    "isEntry": true
+  },
+  "src/routes/__layout.svelte": {
+    "file": "entries/pages/__layout.svelte.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-1259f1f6.js"
+    ],
+    "css": [
+      "assets/entries/pages/__layout.svelte-009f65e5.css"
+    ],
+    "assets": [
+      "assets/placeholder-logo-eda9c675.svg",
+      "assets/phone-9940e229.svg",
+      "assets/placeholder-logo-big-38058311.svg",
+      "assets/location-pin-60a7e739.svg",
+      "assets/socials-yelp-8718eb3a.svg",
+      "assets/socials-instagram-e289a92f.svg",
+      "assets/socials-facebook-511035d2.svg"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-1259f1f6.js"
+    ]
+  },
+  "src/routes/about.svelte": {
+    "file": "entries/pages/about.svelte.js",
+    "src": "src/routes/about.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-1259f1f6.js"
+    ],
+    "css": [
+      "assets/entries/pages/about.svelte-64e391b1.css"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "entries/pages/index.svelte.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-1259f1f6.js"
+    ],
+    "css": [
+      "assets/entries/pages/index.svelte-3a7d2819.css"
+    ]
+  },
+  "src/routes/todos/index.svelte": {
+    "file": "entries/pages/todos/index.svelte.js",
+    "src": "src/routes/todos/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-1259f1f6.js"
+    ],
+    "css": [
+      "assets/entries/pages/todos/index.svelte-02327cf1.css"
+    ]
+  },
+  "_index-1259f1f6.js": {
+    "file": "chunks/index-1259f1f6.js"
+  },
+  "src/hooks.ts": {
+    "file": "chunks/hooks-93fa095d.js",
+    "src": "src/hooks.ts",
+    "isDynamicEntry": true
+  }
+}
