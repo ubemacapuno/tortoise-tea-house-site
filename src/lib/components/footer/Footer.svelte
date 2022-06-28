@@ -1,9 +1,16 @@
 <script>
+	import Facebook from '$lib/images/socials/socials-facebook.svg'
+	import Instagram from '$lib/images/socials/socials-instagram.svg'
+	import Yelp from '$lib/images/socials/socials-yelp.svg'
 </script>
 
 
 <footer>
-	<p>This is the footer component</p>
+	<p>(602) 612-2363</p>
+	<p>2418 E Greenway Rd Phoenix, AZ 85032</p>
+	<!-- Social Media -->
+	<p class="copyright">© 2022 Tortoise Tea House</p>
+
 </footer>
 
 <style>
@@ -13,6 +20,9 @@
 		justify-content: center;
 		align-items: center;
 		padding: 40px;
+		text-align: center;
+		background-color: var(--primary-color);
+		color: var(--pure-white)
 	}
 
 	@media (min-width: 480px) {

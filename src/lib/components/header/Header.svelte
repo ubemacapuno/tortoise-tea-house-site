@@ -14,8 +14,8 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a sveltekit:prefetch href="/">About</a></li>
 				<li><a sveltekit:prefetch href="/">Menu</a></li>
+				<li><a sveltekit:prefetch href="/">About</a></li>
 				<li><a sveltekit:prefetch href="/">Contact</a></li>
 			</ul>
 		</nav>
@@ -68,6 +68,7 @@ header {
 .header-body{
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -77,10 +78,11 @@ h2, p{
 
 h2 {
 	background-color: white;
+	margin: 1rem;
 }
 
 .large-logo {
-	max-width: 270px;
+	max-width: 180px;
 	margin-bottom: 16px;
 	/* background-color: white; */
 }

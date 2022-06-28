@@ -1,4 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+/*         */
+/* CSS RESET */
+/*         */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*         */
+/* END CSS RESET */
+/*         */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 html {font-size: 100%;} /*16px*/
 
 :root {
@@ -6,7 +57,7 @@ html {font-size: 100%;} /*16px*/
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
-	--primary-color: #378e5a;
+	--primary-color: #25623d;
 	--secondary-color: #FFE5D9;
 	--tertiary-color: #FFCAD4;
 	--accent-color: #F4ACB7;
@@ -63,6 +114,12 @@ small, .text_small {font-size: 0.8rem;}
 /* Media Query */
 /*         */
 
+@media (max-width: 300px) {
+	h5 {
+		font-size: 1rem;
+	}
+}
+
 @media (min-width: 900px) {
 	h1 {
 		font-size: 4.8rem;
@@ -90,3 +147,77 @@ small, .text_small {font-size: 0.8rem;}
 	margin: 0 auto;
 	max-width: 1200px;
 }
+
+
+/*              */
+/* Menu Styling */
+/*              */
+
+.menu {
+	font-size: 14px;
+}
+
+.menu-group-heading {
+	margin: 0;
+	padding-bottom: 1em;
+	border-bottom: 2px solid #ccc;
+}
+
+.menu-group {
+	display: grid;
+	grid-template-columns: 1fr; 
+	/*single column layout for mobile */
+	gap: 1.5em;
+	padding: 1.5em 0;
+}
+
+.menu-item {
+	display: flex;
+}
+
+.menu-item-image {
+	width: 80px;
+	height: 80px;
+	outline: solid coral; /*outline for testing*/
+	flex-shrink: 0;
+	object-fit: cover;
+	margin-right: 1.5em;
+}
+
+.menu-item-text {
+	flex-grow: 1;
+}
+
+.menu-item-heading {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.menu-item-name {
+	margin-right: 1.5em;
+	font-weight: bold;
+}
+
+.menu-item-description {
+	line-height: 1.6em;
+}
+
+@media screen and (min-width: 900px) {
+	.menu {
+		font-size: 16px;
+	}
+
+	.menu-group {
+		grid-template-columns: repeat(2, 1fr); /* use grid for 2 evenly sized columns for desktop */
+	}
+
+	.menu-item-image {
+		width: 125px;
+		height: 125px;
+	}
+}
+
+/*                     */
+/* End of Menu Styling */
+/*                     */
