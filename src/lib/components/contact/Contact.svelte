@@ -34,22 +34,22 @@
 		
 		<!-- "/static/netlify-form-helper.html" -->
 
-		<form name="test" method="post" netlify netlify-honeypot="bot-field" action="/success">
-			<input type="hidden" name="form-name" value="test" />
-			<input type="text" name="bot-field" />
+		<form name="contact" method="POST" data-netlify="true">
 			<p>
-				<label>Your Name: <input type="text" name="name" /></label>
+			  <label>Your Name: <input type="text" name="name" /></label>
 			</p>
 			<p>
-				<label>Your Email: <input type="email" name="email" /></label>
+			  <label>Your Email: <input type="email" name="email" /></label>
 			</p>
 			<p>
-				<label>Message: <textarea name="message" /></label>
 			</p>
 			<p>
-				<button type="submit">Send</button>
+			  <label>Message: <textarea name="message"></textarea></label>
 			</p>
-		</form>
+			<p>
+			  <button type="submit">Send</button>
+			</p>
+		  </form>
 
 		<h2>Location</h2>
 
