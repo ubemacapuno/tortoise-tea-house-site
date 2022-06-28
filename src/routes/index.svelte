@@ -1,9 +1,11 @@
 <script context="module" lang="ts">
 	export const prerender = true;
-</script>
-
-<script lang="ts">
-	// import Counter from '$lib/Counter.svelte';
+	import Specialty from '$lib/components/menu/Specialty.svelte';
+	import Teas from '$lib/components/menu/Teas.svelte';
+	import Toppings from '$lib/components/menu/Toppings.svelte';
+	import FruitTea from '$lib/components/menu/FruitTea.svelte';
+	import MilkTea from '$lib/components/menu/MilkTea.svelte';
+	import Coffee from '$lib/components/menu/Coffee.svelte';
 </script>
 
 <svelte:head>
@@ -11,24 +13,93 @@
 	<meta name="Tortoise Tea House Main Page" content="Svelte demo app" />
 </svelte:head>
 
-<section class="page-wrapper">
-	<h2>About Us</h2>
-	<h4>Image Here</h4>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto ipsa minima, corrupti eaque, dicta voluptatibus aperiam quibusdam, sequi eos sed corporis id incidunt. Ut sint in doloribus quod minima!</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
-</section>
+<div class="page-wrapper">
+	<section class="index-header">
+		<h2>About Us</h2>
+	</section>
+
+	<section class="index-body">
+		<img class="test-img index-left" src="" alt="Test">
+		<section class="index-right">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto ipsa minima, corrupti eaque, dicta voluptatibus aperiam quibusdam, sequi eos sed corporis id incidunt. Ut sint in doloribus quod minima!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
+		</section>
+	</section>
+	
+</div>
+
+<Specialty />
+<MilkTea />
+<FruitTea />
+<Toppings />
+<Coffee />
+<Teas />
+
 
 <style>
-	section {
+	.index-header {
+		padding: 0;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
+	}
+
+	.index-right {
+		padding-left: 10px;
+		margin-left: 20px;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		max-width: 440px;
+	}
+
+	.index-left {
+		padding-right: 10px;
+		margin-right: 20px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.index-body {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+		width: 100%;
+		max-width: 1024px;
+		margin: 0 auto;
+		box-sizing: border-box;
 	}
 	
-	h4 {
+	.test-img {
+		width: 350px;
+		height: 350px;
+		outline: solid coral;
+	}
+
+@media screen and (max-width: 900px) {
+
+		.index-body {
+		flex-direction: column;
+		}
+
+		.index-right {
+			padding: 0;
+			margin: 0;
+		}
+
+		.test-img {
+			margin: 1rem;
+		}
+}
+
+@media screen and (max-width: 600px) {
+	.test-img {
 		width: 200px;
 		height: 200px;
 		outline: solid coral;
 	}
+}
 </style>

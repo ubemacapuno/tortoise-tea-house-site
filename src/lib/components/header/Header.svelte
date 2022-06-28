@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	// import { page } from '$app/stores';
 	import logo from './placeholder-logo.svg';
 	import Phone from '$lib/images/icons/phone.svg'
 	import largeLogo from './placeholder-logo-big.svg';
@@ -35,10 +35,7 @@
 			<img class="fas fa-phone-alt" src={Phone} alt="Tortoise Tea House Phone" aria-hidden="true">
 			<span class="phone-number">(602) 612-2363</span>
 		</a>
-
-
 	</div>
-
 </header>
 
 <style>
@@ -152,7 +149,6 @@ nav {
 	justify-content: center;
 	--background: rgba(255, 255, 255, 0.7);
 }
-
 
 ul {
 	position: relative;

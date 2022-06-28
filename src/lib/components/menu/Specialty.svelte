@@ -16,11 +16,7 @@
                             <span class="menu-item-name">Tortoise Tea</span>
                             <span class="menu-item-price">5.00</span>
                         </h5>
-                        <!-- Add menu item description if needed here
-                        <p class="menu-item-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse, quasi explicabo aut libero ad asperiores? Sit, esse doloremque. Dolor eius repellat quod veritatis corporis sequi similique suscipit porro beatae.
-                        </p>
-                        -->
+                        <!-- <p>Item Details Here</p> -->
                     </div>
                 </div>                 
             
@@ -31,11 +27,6 @@
                             <span class="menu-item-name">Mashed Taro Jasmine Tea</span>
                             <span class="menu-item-price">5.50</span>
                         </h5>
-                        <!-- Add menu item description if needed here
-                        <p class="menu-item-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse, quasi explicabo aut libero ad asperiores? Sit, esse doloremque. Dolor eius repellat quod veritatis corporis sequi similique suscipit porro beatae.
-                        </p>
-                        -->
                     </div>
                 </div>                 
             
@@ -46,11 +37,6 @@
                             <span class="menu-item-name">Creme Bru Matcha & Oreo</span>
                             <span class="menu-item-price">5.50</span>
                         </h5>
-                        <!-- Add menu item description if needed here
-                        <p class="menu-item-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse, quasi explicabo aut libero ad asperiores? Sit, esse doloremque. Dolor eius repellat quod veritatis corporis sequi similique suscipit porro beatae.
-                        </p>
-                        -->
                     </div>
                 </div>                 
         
@@ -61,11 +47,6 @@
                             <span class="menu-item-name">Milkyway Latte</span>
                             <span class="menu-item-price">4.50</span>
                         </h5>
-                        <!-- Add menu item description if needed here
-                        <p class="menu-item-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse, quasi explicabo aut libero ad asperiores? Sit, esse doloremque. Dolor eius repellat quod veritatis corporis sequi similique suscipit porro beatae.
-                        </p>
-                        -->
                     </div>
                 </div>                 
             
@@ -76,11 +57,6 @@
                             <span class="menu-item-name">Mango Sago</span>
                             <span class="menu-item-price">5.50</span>
                         </h5>
-                        <!-- Add menu item description if needed here
-                        <p class="menu-item-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse, quasi explicabo aut libero ad asperiores? Sit, esse doloremque. Dolor eius repellat quod veritatis corporis sequi similique suscipit porro beatae.
-                        </p>
-                        -->
                     </div>
                 </div>                 
             
@@ -91,11 +67,6 @@
                             <span class="menu-item-name">Sesame Latte</span>
                             <span class="menu-item-price">4.50</span>
                         </h5>
-                        <!-- Add menu item description if needed here
-                        <p class="menu-item-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse, quasi explicabo aut libero ad asperiores? Sit, esse doloremque. Dolor eius repellat quod veritatis corporis sequi similique suscipit porro beatae.
-                        </p>
-                        -->
                     </div>
                 </div>                 
             
@@ -106,11 +77,6 @@
                             <span class="menu-item-name">Sweet Coconut Milk</span>
                             <span class="menu-item-price">5.00</span>
                         </h5>
-                        <!-- Add menu item description if needed here
-                        <p class="menu-item-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse, quasi explicabo aut libero ad asperiores? Sit, esse doloremque. Dolor eius repellat quod veritatis corporis sequi similique suscipit porro beatae.
-                        </p>
-                        -->
                     </div>
                 </div>                 
             
@@ -121,11 +87,6 @@
                             <span class="menu-item-name">Mangonada</span>
                             <span class="menu-item-price">5.50</span>
                         </h5>
-                        <!-- Add menu item description if needed here
-                        <p class="menu-item-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse, quasi explicabo aut libero ad asperiores? Sit, esse doloremque. Dolor eius repellat quod veritatis corporis sequi similique suscipit porro beatae.
-                        </p>
-                        -->
                     </div>
                 </div>                 
             
@@ -136,11 +97,6 @@
                             <span class="menu-item-name">Horchata</span>
                             <span class="menu-item-price">5.00</span>
                         </h5>
-                        <!-- Add menu item description if needed here
-                        <p class="menu-item-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse, quasi explicabo aut libero ad asperiores? Sit, esse doloremque. Dolor eius repellat quod veritatis corporis sequi similique suscipit porro beatae.
-                        </p>
-                        -->
                     </div>
                 </div>                 
             </div>
