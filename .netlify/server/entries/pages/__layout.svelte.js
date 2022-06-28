@@ -54,10 +54,9 @@ const Contact = (0, import_index_1259f1f6.c)(($$result, $$props, $$bindings, slo
 		
 		
 
-		<form name="${"test"}" method="${"post"}" netlify netlify-honeypot="${"bot-field"}" action="${"/success"}"><input type="${"hidden"}" name="${"form-name"}" value="${"test"}">
-			<input type="${"text"}" name="${"bot-field"}">
-			<p><label>Your Name: <input type="${"text"}" name="${"name"}"></label></p>
+		<form name="${"contact-form-test"}" method="${"POST"}" data-netlify="${"true"}"><p><label>Your Name: <input type="${"text"}" name="${"name"}"></label></p>
 			<p><label>Your Email: <input type="${"email"}" name="${"email"}"></label></p>
+			<p></p>
 			<p><label>Message: <textarea name="${"message"}"></textarea></label></p>
 			<p><button type="${"submit"}">Send</button></p></form>
 
