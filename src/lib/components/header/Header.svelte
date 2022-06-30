@@ -5,7 +5,6 @@
 	import largeLogo from './placeholder-logo-big.svg';
 
 	// This code below allows for smooth scrolling to ID on click
-	// import { element } from 'svelte/internal';
   	const scrollToElement = (selector: any) => {
     	const element = document.querySelector(selector);
     	if (!element) return;
@@ -33,6 +32,7 @@
 				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#menu')}>Menu</a></li>
 				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#about')}>About</a></li>
 				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#contact')}>Contact</a></li>
+				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#location')}>Location</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -43,7 +43,7 @@
 
 		<!-- Cards -->
 		
-		<p class="card-detail">Wed - Sun: 12pm  - 8pm</p>
+		<p class="card-detail">Wed - Mon: 12pm  - 8pm</p>
 		<p class="card-detail">Closed Tuesday</p>
 		<a class="card-detail-alternate" title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8"><p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p></a>
 		
