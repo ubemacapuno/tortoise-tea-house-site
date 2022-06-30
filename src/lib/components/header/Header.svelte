@@ -22,7 +22,7 @@
 <header class="wrapper">
 	<div class="header-top">
 		<div class="corner">
-			<a href="/">
+			<a id="top" href={'#'} on:click|preventDefault={() => scrollToElement('#top')}>
 				<img src={logo} alt="Tortoise Tea House Logo" />
 			</a>
 		</div>
@@ -63,9 +63,9 @@ header {
 	margin: 0;
 	width: 100%;
 	height: 100vh;
-	background-color: var(--secondary-color);
-	/* background: url('$lib/images/background/wiggle.svg'); */
-}
+	/* background-color: var(--secondary-color); */
+	background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(255, 221, 210,1)'/%3E%3Ccircle cx='-15' cy='15' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='-5' cy='25' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='5' cy='15' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='25' cy='15' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='15' cy='25' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='35' cy='25' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='15' cy='15' r='1' fill='rgba(131, 197, 190,1)'/%3E%3Ccircle cx='35' cy='15' r='1' fill='rgba(131, 197, 190,1)'/%3E%3Ccircle cx='5' cy='25' r='1' fill='rgba(131, 197, 190,1)'/%3E%3Ccircle cx='25' cy='25' r='1' fill='rgba(131, 197, 190,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
+	}
 
 .wrapper {
 	margin-bottom: 100px;
@@ -85,17 +85,22 @@ header {
 	align-items: center;
 }
 
+p{
+	line-height: 1.4rem;
+	margin: 0;
+}
+
 h2, p{
 	text-align: center;
 }
 
 h2 {
-	background-color: white;
+	background-color: hsla(0, 0%, 100%,50%);
 	margin: 1rem;
 }
 
 .large-logo {
-	max-width: 180px;
+	max-width: 350px;
 	margin-bottom: 16px;
 	/* background-color: white; */
 }
@@ -206,6 +211,9 @@ a:hover, img:hover {
         .header-top {
             display: none;
         }
+		.large-logo {
+			max-width: 180px;
+		}
     }
 
 </style>

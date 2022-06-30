@@ -2,7 +2,7 @@
 	import Icon from '$lib/icons/Icon.svelte';
 	import logoImg from '$lib/components/header/placeholder-logo.svg'
     import Facebook from '$lib/images/socials/socials-facebook.svg'
-	import Instagram from '$lib/images/socials/socials-instagram-alternate.svg'
+	import Instagram from '$lib/images/socials/socials-instagram.svg'
 	import Yelp from '$lib/images/socials/socials-yelp.svg'
 	export let isMenuOpen = false;
 	const closeMenu = () => (isMenuOpen = false);
@@ -39,16 +39,16 @@
 	<div class="mobile-menu">
 		<div class="hamburger-menu">
 			<button class="menu-icon close" on:click={closeMenu}>
-				<Icon name="close" color=var(--pure-white) />
+				<Icon name="close" color=var(--primary-color) />
 			</button>
 		</div>
 		<nav class="mobile-nav">
 			<ul>
                 <!-- The following anchors below will use smooth scrolling to get to their respective element IDs -->
-                <li><a href={'#'} on:click|preventDefault={() => scrollToElement('#menu')} on:click={closeMenu}>Menu</a></li>
-				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#about')} on:click={closeMenu}>About</a></li>
-				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#contact')} on:click={closeMenu}>Contact</a></li>
-                <li><a href={'#'} on:click|preventDefault={() => scrollToElement('#location')} on:click={closeMenu}>Location</a></li>
+                <li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#menu')} on:click={closeMenu}>Menu</a></li>
+				<li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#about')} on:click={closeMenu}>About</a></li>
+				<li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#contact')} on:click={closeMenu}>Contact</a></li>
+                <li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#location')} on:click={closeMenu}>Location</a></li>
 			</ul>
 		</nav>
 
@@ -58,6 +58,9 @@
                 <li><a class="icon" target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img src={Instagram} alt="Instagram Logo" class="instagram"></a></li>
                 <li><a class="icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img src={Yelp} alt="YelpLogo"></a></li>
             </ul>
+			<div>
+				<p class="copyright">© 2022 Tortoise Tea House</p>
+			</div>
         </div>
 	</div>
 </aside>
@@ -133,6 +136,9 @@
 		font-weight: 400;
 		font-size: var(--h4-font-size);
 	}
+	.page-link{
+		border-bottom: 1px solid var(--pure-white)
+	}
     a {
         color: var(--pure-white)
     }
@@ -145,9 +151,19 @@
 	.isMenuOpen {
 		left: 0;
 	}
+	.icons{
+		display: flex;
+		justify-content: space-around;
+		margin: 0 auto;
+		padding-bottom: 100px;
+	}
+	.copyright{
+		text-align: center;
+		color: var(--primary-color)
+	}
 
 /* Media Queries */
-    @media (min-width: 450px) {
+    @media (min-width: 451px) {
         .header {
             display: none;
         }
