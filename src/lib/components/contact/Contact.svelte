@@ -12,7 +12,6 @@
 
 		<h2 id="contact">Contact</h2>
 		<p>(602) 612-2363</p>
-		<p>2418 E Greenway Rd Phoenix, AZ 85032</p>
 		<h5>Let us know how we're doing!</h5>
 		
 		<form name="contact-form-test" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -49,8 +48,14 @@
 
 		<h2 id="location">Location</h2>
 		<p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p>
+		<div class ="map-responsive"> 
+			<iframe class="google-map" title="Tortoise Tea House Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.171278907392!2d-112.03207368255615!3d33.6268007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b71f423abf939%3A0x46649beea052a281!2s2418%20E%20Greenway%20Rd%2C%20Phoenix%2C%20AZ%2085032!5e0!3m2!1sen!2sus!4v1656612628486!5m2!1sen!2sus" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
 
-		<iframe class="google-map" title="Tortoise Tea House Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.1711074002183!2d-112.03207368448756!3d33.62680514747617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b71694f8c3039%3A0x4e2e84a8cf815fcc!2sTortoise%20Tea%20House!5e0!3m2!1sen!2sus!4v1656351306191!5m2!1sen!2sus" width="220" height="180" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<!-- <iframe class="google-map" title="Tortoise Tea House Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.1711074002183!2d-112.03207368448756!3d33.62680514747617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b71694f8c3039%3A0x4e2e84a8cf815fcc!2sTortoise%20Tea%20House!5e0!3m2!1sen!2sus!4v1656351306191!5m2!1sen!2sus" width="220" height="180" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+		
+
 	</section>
 </section>
 
@@ -101,6 +106,22 @@
 	.google-map{
 		margin-bottom: 22px;
 	}
+	/* map responsiveness start */
+	.map-responsive{
+		overflow:hidden;
+		padding-bottom:56.25%;
+		position:relative;
+		height:0;
+	}
+
+	.map-responsive iframe{
+			left:0;
+			top:0;
+			height:100%;
+			width:100%;
+			position:absolute;
+		}
+	/* map responsiveness end */
 
 	@media (min-width: 480px) {
 		.contact-component  {
