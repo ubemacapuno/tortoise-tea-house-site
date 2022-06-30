@@ -57,10 +57,10 @@ table {
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
-	--primary-color: #25623d;
-	--secondary-color: #FFE5D9;
-	--tertiary-color: #FFCAD4;
-	--accent-color: #F4ACB7;
+	--primary-color: #006D77;
+	--secondary-color: #FFDDD2;
+	--tertiary-color: #83C5BE;
+	--accent-color: #E29578;
 	--secondary-accent-color: #9D8189;
 	--heading-color: rgba(0, 0, 0, 0.7);
 	--text-color: #444444;
@@ -68,6 +68,11 @@ table {
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	--sidebar-width: 275px;
+	--h1-font-size: 3.052rem;
+	--h2-font-size: 2.441rem;
+	--h3-font-size: 1.953rem;
+	--h4-font-size: 1.563rem;
+	--h5-font-size: 1.25rem;
 }
 
 html {
@@ -179,7 +184,7 @@ small, .text_small {font-size: 0.8rem;}
 .menu-item-image {
 	width: 80px;
 	height: 80px;
-	outline: solid coral; /*outline for testing*/
+	outline: solid var(--primary-color); /*outline for testing*/
 	flex-shrink: 0;
 	object-fit: cover;
 	margin-right: 1.5em;

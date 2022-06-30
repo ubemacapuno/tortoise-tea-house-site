@@ -79,7 +79,7 @@
 	.test-img {
 		width: 350px;
 		height: 350px;
-		outline: solid coral;
+		outline: solid var(--primary-color);
 	}
 
 @media screen and (max-width: 900px) {
@@ -102,7 +102,7 @@
 	.test-img {
 		width: 200px;
 		height: 200px;
-		outline: solid coral;
+		outline: solid var(--primary-color);
 	}
 }
 </style>

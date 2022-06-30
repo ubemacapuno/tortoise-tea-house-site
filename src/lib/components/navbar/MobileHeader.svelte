@@ -1,7 +1,9 @@
 <script lang="ts">
 	import Icon from '$lib/icons/Icon.svelte';
 	import logoImg from '$lib/components/header/placeholder-logo.svg'
-	import { page } from '$app/stores';
+    import Facebook from '$lib/images/socials/socials-facebook.svg'
+	import Instagram from '$lib/images/socials/socials-instagram-alternate.svg'
+	import Yelp from '$lib/images/socials/socials-yelp.svg'
 	export let isMenuOpen = false;
 	const closeMenu = () => (isMenuOpen = false);
 
@@ -28,7 +30,7 @@
 	</div>
 	<div class="hamburger-menu">
 		<button class="menu-icon" on:click={() => (isMenuOpen = !isMenuOpen)}>
-			<Icon name="hamburger" color="white" />
+			<Icon name="hamburger" color=var(--pure-white) />
 		</button>
 	</div>
 </div>
@@ -37,16 +39,26 @@
 	<div class="mobile-menu">
 		<div class="hamburger-menu">
 			<button class="menu-icon close" on:click={closeMenu}>
-				<Icon name="close" color="white" />
+				<Icon name="close" color=var(--pure-white) />
 			</button>
 		</div>
 		<nav class="mobile-nav">
 			<ul>
+                <!-- The following anchors below will use smooth scrolling to get to their respective element IDs -->
                 <li><a href={'#'} on:click|preventDefault={() => scrollToElement('#menu')} on:click={closeMenu}>Menu</a></li>
 				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#about')} on:click={closeMenu}>About</a></li>
 				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#contact')} on:click={closeMenu}>Contact</a></li>
+                <li><a href={'#'} on:click|preventDefault={() => scrollToElement('#location')} on:click={closeMenu}>Location</a></li>
 			</ul>
 		</nav>
+
+        <div class="mobile-socials">
+            <ul class="icons">
+                <li><a class="icon" target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img src={Facebook} alt="Facebook Logo"></a></li>
+                <li><a class="icon" target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img src={Instagram} alt="Instagram Logo" class="instagram"></a></li>
+                <li><a class="icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img src={Yelp} alt="YelpLogo"></a></li>
+            </ul>
+        </div>
 	</div>
 </aside>
 
@@ -103,25 +115,38 @@
 	}
 	.mobile-menu {
 		padding: var(--gap-largest);
-		background-color: var(--secondary-color);
+		background-color: var(--tertiary-color);
 		height: 100vh;
 		width: 100vw;
 		overflow-y: scroll;
 		margin-right: 1rem;
 		z-index: 100;
 	}
+    ul{
+        margin-left: 50px;
+
+    }
 	li {
 		list-style: none;
 		display: block;
-		margin: 30px 0;
+		margin: 35px 0;
 		font-weight: 400;
-		font-size: var(--h4);
+		font-size: var(--h4-font-size);
 	}
+    a {
+        color: var(--pure-white)
+    }
+    .mobile-socials{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 	.isMenuOpen {
 		left: 0;
 	}
 
-
+/* Media Queries */
     @media (min-width: 450px) {
         .header {
             display: none;

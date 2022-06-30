@@ -11,7 +11,9 @@
 	<section>
 
 		<h2 id="contact">Contact</h2>
-		<p>Let us know how we're doing!</p>
+		<p>(602) 612-2363</p>
+		<p>2418 E Greenway Rd Phoenix, AZ 85032</p>
+		<h5>Let us know how we're doing!</h5>
 		
 		<form name="contact-form-test" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 			<input type="hidden" name="form-name" value="test" />
@@ -43,7 +45,10 @@
 			<li><a class="icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img src={Yelp} alt="YelpLogo"></a></li>
 		</ul>
 
-		<h2>Location</h2>
+		<!-- Location -->
+
+		<h2 id="location">Location</h2>
+		<p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p>
 
 		<iframe class="google-map" title="Tortoise Tea House Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.1711074002183!2d-112.03207368448756!3d33.62680514747617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b71694f8c3039%3A0x4e2e84a8cf815fcc!2sTortoise%20Tea%20House!5e0!3m2!1sen!2sus!4v1656351306191!5m2!1sen!2sus" width="220" height="180" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</section>
@@ -92,6 +97,9 @@
 	}
 	button {
 		margin-top: 16px;
+	}
+	.google-map{
+		margin-bottom: 22px;
 	}
 
 	@media (min-width: 480px) {
