@@ -3,24 +3,37 @@
 	import Facebook from '$lib/images/socials/socials-facebook.svg'
 	import Instagram from '$lib/images/socials/socials-instagram.svg'
 	import Yelp from '$lib/images/socials/socials-yelp.svg'
-
-	// we don't need any JS on this page, though we'll load
-	// it in dev so that we get hot module replacement...
-	// export const hydrate = dev;
-
-	// ...but if the client-side router is already loaded
-	// (i.e. we came here from elsewhere in the app), use it
-	// export const router = browser;
-
-	// since there's no dynamic data here, we can prerender
-	// it so that it gets served as a static asset in prod
 	export const prerender = true;
 </script>
 
 
 <section class="contact-component">
 	<section>
-		<h2>Contact</h2>
+
+		<h2 id="contact">Contact</h2>
+		<p>Let us know how we're doing!</p>
+		
+		<form name="contact-form-test" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+			<input type="hidden" name="form-name" value="test" />
+			<div class="fields">
+				<div class="field half">
+					<p class="contact-form">Name (required)</p>
+					<input type="text" name="name" id="name" required/>
+				</div>
+				<div class="field half">
+					<p class="contact-form">Email (required)</p>
+					<input type="email" name="email" id="email" required/>
+				</div>
+				<div class="field">
+					<p class="contact-form">Message</p>
+					<textarea name="message" id="message" rows="4" required></textarea>
+				</div>
+				<div class="field">
+					<div data-netlify-recaptcha="true"></div>
+				</div>
+				<button type="submit" class="button">Send</button>
+			</div>
+		</form>
 		
 		<!-- Social Media -->
 
@@ -29,29 +42,6 @@
 			<li><a class="icon" target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img src={Instagram} alt="Instagram Logo"></a></li>
 			<li><a class="icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img src={Yelp} alt="YelpLogo"></a></li>
 		</ul>
-
-		<p>Let us know how we're doing!</p>
-		
-		<!-- "/static/netlify-form-helper.html" -->
-
-		<form name="contact-form-test" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-			<input type="hidden" name="form-name" value="test" />
-			<p>
-			  <label>Your Name: <input type="text" name="name" /></label>
-			</p>
-			<p>
-			  <label>Your Email: <input type="email" name="email" /></label>
-			</p>
-			<p>
-			</p>
-			<p>
-			  <label>Message: <textarea name="message"></textarea></label>
-			</p>
-			<div data-netlify-recaptcha="true"></div>
-			<p>
-			  <button type="submit">Send</button>
-			</p>
-		  </form>
 
 		<h2>Location</h2>
 
@@ -78,6 +68,32 @@
 		margin: 1rem;
 	}
 
+	form {
+		border-radius: 16px;
+		border: 1px solid var(--tertiary-color);
+		padding: 16px;
+		max-width: 600px;
+		background-color: var(--secondary-color)
+	} 
+	.fields {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	.field p {
+		margin-bottom: 0;
+	}
+	.field input, .field, .field textarea {
+		width: 100%;
+	}
+	textarea {
+		resize: none;
+		min-height: 100px;
+	}
+	button {
+		margin-top: 16px;
+	}
+
 	@media (min-width: 480px) {
 		.contact-component  {
 			padding: 40px 0;
@@ -87,4 +103,5 @@
 			width: 200px;
 		}
 	}
+
 </style>

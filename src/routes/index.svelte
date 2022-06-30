@@ -15,7 +15,7 @@
 
 <div class="page-wrapper">
 	<section class="index-header">
-		<h2>About Us</h2>
+		<h2 id="about">About Us</h2>
 	</section>
 
 	<section class="index-body">
@@ -28,6 +28,10 @@
 	
 </div>
 
+<section class="index-header">
+	<h2 id="menu">Menu</h2>
+</section>
+
 <Specialty />
 <MilkTea />
 <FruitTea />
@@ -37,11 +41,10 @@
 
 
 <style>
+
+
 	.index-header {
-		padding: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		text-align: center;
 	}
 
 	.index-right {

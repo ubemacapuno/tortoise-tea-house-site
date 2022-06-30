@@ -3,6 +3,21 @@
 	import logo from './placeholder-logo.svg';
 	import Phone from '$lib/images/icons/phone.svg'
 	import largeLogo from './placeholder-logo-big.svg';
+
+	// This code below allows for smooth scrolling to ID on click
+	// import { element } from 'svelte/internal';
+  	const scrollToElement = (selector: any) => {
+    	const element = document.querySelector(selector);
+    	if (!element) return;
+
+		let position = element.getBoundingClientRect().top;
+		let offset = position + window.pageYOffset;
+		window.scrollTo({
+		top: offset,
+		behavior: 'smooth',
+		});
+	};
+	// End code for smooth scrolling to ID on click
 </script>
 
 <header class="wrapper">
@@ -14,9 +29,10 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a sveltekit:prefetch href="/">Menu</a></li>
-				<li><a sveltekit:prefetch href="/">About</a></li>
-				<li><a sveltekit:prefetch href="/">Contact</a></li>
+				<!-- The following anchors below will use smooth scrolling to get to their respective element IDs -->
+				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#menu')}>Menu</a></li>
+				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#about')}>About</a></li>
+				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#contact')}>Contact</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -185,5 +201,11 @@ nav a {
 a:hover, img:hover {
 	color: var(--accent-color);
 }
+
+@media (max-width: 450px) {
+        .header-top {
+            display: none;
+        }
+    }
 
 </style>
