@@ -2,7 +2,7 @@
 	// import { page } from '$app/stores';
 	import logo from './placeholder-logo.svg';
 	import Phone from '$lib/images/icons/phone.svg'
-	import largeLogo from './placeholder-logo-big.svg';
+	import largeLogo from '$lib/components/header/tortoise-tea-house-logo-main.jpg';
 
 	// This code below allows for smooth scrolling to ID on click
   	const scrollToElement = (selector: any) => {
@@ -38,7 +38,7 @@
 	</div>
 
 	<div class="header-body">
-		<h2>Tortoise Tea House</h2>
+		<!-- <h2>Tortoise Tea House</h2> -->
 		<img class="large-logo" src={largeLogo} alt="Tortoise Tea House Logo - Large" />
 
 		<!-- Cards -->
@@ -57,15 +57,10 @@
 <style>
 
 header {
-	display: flex;
-	flex-direction: column;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	height: 100vh;
-	/* background-color: var(--secondary-color); */
-	background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(255, 221, 210,1)'/%3E%3Ccircle cx='-15' cy='15' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='-5' cy='25' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='5' cy='15' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='25' cy='15' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='15' cy='25' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='35' cy='25' r='1' fill='rgba(255, 255, 255,1)'/%3E%3Ccircle cx='15' cy='15' r='1' fill='rgba(131, 197, 190,1)'/%3E%3Ccircle cx='35' cy='15' r='1' fill='rgba(131, 197, 190,1)'/%3E%3Ccircle cx='5' cy='25' r='1' fill='rgba(131, 197, 190,1)'/%3E%3Ccircle cx='25' cy='25' r='1' fill='rgba(131, 197, 190,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
-	}
+	height: 1050px;
+	background-color: var(--secondary-color);
+}
+
 
 .wrapper {
 	margin-bottom: 100px;
@@ -90,17 +85,17 @@ p{
 	margin: 0;
 }
 
-h2, p{
+p{
 	text-align: center;
 }
 
-h2 {
+/* h2 {
 	background-color: hsla(0, 0%, 100%,50%);
 	margin: 1rem;
-}
+} */
 
 .large-logo {
-	max-width: 350px;
+	max-width: 650px;
 	margin-bottom: 16px;
 	/* background-color: white; */
 }
@@ -207,12 +202,31 @@ a:hover, img:hover {
 	color: var(--accent-color);
 }
 
+
+
+@media (max-width: 950px) {
+		.large-logo {
+			max-width: 430px;
+			margin: 2rem 0 0 0;
+		}
+
+		header {
+			display: flex;
+			flex-direction: column;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			height: 100vh;
+		}
+    }
+
 @media (max-width: 450px) {
         .header-top {
             display: none;
         }
 		.large-logo {
-			max-width: 180px;
+			max-width: 260px;
+			margin: 2rem 0 0 0;
 		}
     }
 
