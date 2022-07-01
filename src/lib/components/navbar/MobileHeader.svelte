@@ -39,7 +39,7 @@
 	<div class="mobile-menu">
 		<div class="hamburger-menu">
 			<button class="menu-icon close" on:click={closeMenu}>
-				<Icon name="close" color=var(--primary-color) />
+				<Icon name="close" color=var(--pure-white) />
 			</button>
 		</div>
 		<nav class="mobile-nav">

@@ -46,11 +46,14 @@
 		<p class="card-detail">Wed - Mon: 12pm  - 8pm</p>
 		<p class="card-detail">Closed Tuesday</p>
 		<a class="card-detail-alternate" title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8"><p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p></a>
-		
-		<a href="tel:1-602-612-2363" class="phone-btn" title="Give us a call!">
-			<img class="fas fa-phone-alt" src={Phone} alt="Tortoise Tea House Phone" aria-hidden="true">
+
+		<div class="phone">
+			<a href="tel:1-602-612-2363" class="phone-btn" title="Give us a call!">
+				<img class="fas fa-phone-alt" src={Phone} alt="Tortoise Tea House Phone" aria-hidden="true">
+			</a>
 			<span class="phone-number">(602) 612-2363</span>
-		</a>
+		</div>
+
 	</div>
 </header>
 
@@ -95,7 +98,7 @@ p{
 } */
 
 .large-logo {
-	max-width: 650px;
+	max-width: 575px;
 	margin-bottom: 16px;
 	/* background-color: white; */
 }
@@ -122,8 +125,12 @@ p{
 	content: url('$lib/images/location/location-pin.svg');
 }
 
+.fas{
+	margin: 0 1rem 1rem 0;
+}
+
 span {
-	margin-top: 1rem;
+	margin: 1rem 0 0 1rem;
 	color: black;
 }
 
@@ -151,13 +158,16 @@ span {
 	object-fit: contain;
 }
 
+.phone{
+	display: flex;
+	margin: 2rem;
+}
+
 .phone-btn {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	width: 250px;
 	justify-content: space-around;
-	margin: 10px;
 }
 
 nav {
