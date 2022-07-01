@@ -159,7 +159,9 @@
 	}
 	.copyright{
 		text-align: center;
-		color: var(--primary-color)
+		color: var(--primary-color);
+		position: relative;
+		bottom: 25px;
 	}
 
 /* Media Queries */
