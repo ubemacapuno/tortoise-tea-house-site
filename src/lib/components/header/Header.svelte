@@ -64,19 +64,18 @@ header {
 	background-color: var(--secondary-color);
 }
 
-
 .wrapper {
 	margin-bottom: 100px;
 }
 
-.header-top{
+.header-top {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	background-color: var(--primary-color);
 }
 
-.header-body{
+.header-body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -86,21 +85,12 @@ header {
 p{
 	line-height: 1.4rem;
 	margin: 0;
-}
-
-p{
 	text-align: center;
 }
-
-/* h2 {
-	background-color: hsla(0, 0%, 100%,50%);
-	margin: 1rem;
-} */
 
 .large-logo {
 	max-width: 575px;
 	margin-bottom: 16px;
-	/* background-color: white; */
 }
 
 .corner {
@@ -211,8 +201,6 @@ nav a {
 a:hover, img:hover {
 	color: var(--accent-color);
 }
-
-
 
 @media (max-width: 950px) {
 		.large-logo {

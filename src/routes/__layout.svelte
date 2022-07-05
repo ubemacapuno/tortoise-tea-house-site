@@ -3,6 +3,7 @@
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/footer/Footer.svelte';
 	import Contact from '$lib/components/contact/Contact.svelte';
+	import Location from '$lib/components/location/Location.svelte';
 	import '../app.css';
 </script>
 <MobileHeader />
@@ -11,6 +12,7 @@
 	<slot />
 </main>
 <Contact />
+<Location />
 <Footer />
 
 <style>

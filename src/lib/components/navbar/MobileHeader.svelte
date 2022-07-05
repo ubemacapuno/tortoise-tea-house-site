@@ -21,7 +21,6 @@
 	};
 	// End code for smooth scrolling to ID on click
 </script>
-
 <div class="header">
 	<div class="logo">
 		<a sveltekit:prefetch href="/">
@@ -34,7 +33,6 @@
 		</button>
 	</div>
 </div>
-
 <aside class="mobile-menu-wrapper" class:isMenuOpen>
 	<div class="mobile-menu">
 		<div class="hamburger-menu">
@@ -64,7 +62,6 @@
         </div>
 	</div>
 </aside>
-
 <style>
 	button {
 		background: none;
@@ -177,9 +174,8 @@
 		    overflow-y: visible;
              /*"overflow-y: visible;" is a work-around. 
              Without it, when the mobile menu is opened,
-             the HORIZONTAL scrollbar is visible; this code hides it. */
+             a HORIZONTAL scrollbar is visible on the mobile menu; 
+			 this code hides that scrollbar. */
 	    }
     }
-
-
 </style>
