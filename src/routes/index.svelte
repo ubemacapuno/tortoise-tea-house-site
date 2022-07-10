@@ -25,10 +25,21 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
 		</section>
 	</section>
+	<section class="index-header">
+		<h2 id="menu">Menu</h2>
+	</section>
+	
+	<Specialty />
+	<MilkTea />
+	<FruitTea />
+	<Toppings />
+	<Coffee />
+	<Teas />
+	
 	
 </div>
 
-<section class="index-header">
+<!-- <section class="index-header">
 	<h2 id="menu">Menu</h2>
 </section>
 
@@ -37,7 +48,7 @@
 <FruitTea />
 <Toppings />
 <Coffee />
-<Teas />
+<Teas /> -->
 
 
 <style>
