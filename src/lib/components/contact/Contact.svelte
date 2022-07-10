@@ -7,7 +7,8 @@
 
 
 <section class="contact-component">
-	<div class="page-wrapper">
+	<!-- Adding Page-wrapper is creating horizontal scroll on devices ~280px width. Figure out why -->
+	<div class=""> 
 		<section>
 			<h2 id="contact">Contact</h2>
 			<p>(602) 612-2363</p>
