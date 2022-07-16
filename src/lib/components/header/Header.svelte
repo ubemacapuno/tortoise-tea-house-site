@@ -3,6 +3,7 @@
 	import logo from './placeholder-logo.svg';
 	import Phone from '$lib/images/icons/phone.svg'
 	import largeLogo from '$lib/components/header/tortoise-tea-house-logo-main.jpg';
+	import Location from '$lib/images/location/location-pin.svg'
 
 	// This code below allows for smooth scrolling to ID on click
   	const scrollToElement = (selector: any) => {
@@ -45,20 +46,27 @@
 		
 		<p class="card-detail">Wed - Mon: 12pm  - 8pm</p>
 		<p class="card-detail">Closed Tuesday</p>
-		<a class="card-detail-alternate" title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8"><p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p></a>
+		<a class="card-detail-alternate" title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8">
+			<img src={Location} alt="Tortoise Tea House Phone" aria-hidden="true">
+			<p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p>
+		</a>
 
-		<div class="phone">
+		<a class="card-detail-alternate" title="Call us at 1-602-612-2363" href="tel:1-602-612-2363">
+			<img src={Phone} alt="Tortoise Tea House Phone" aria-hidden="true">
+			<p class="phone-card">Tel: (602) 612-2363</p>
+		</a>
+
+		<!-- <div class="phone">
 			<a href="tel:1-602-612-2363" class="phone-btn" title="Give us a call!">
 				<img class="fas fa-phone-alt" src={Phone} alt="Tortoise Tea House Phone" aria-hidden="true">
 			</a>
 			<span class="phone-number">(602) 612-2363</span>
-		</div>
+		</div> -->
 
 	</div>
 </header>
 
 <style>
-
 header {
 	height: 1050px;
 	background-color: var(--secondary-color);
@@ -106,22 +114,9 @@ p{
 	height: 100%;
 }
 
-.location-card {
-	background-color: var(--primary-color);
+.location-card, .phone-card {
 	color: white;
-}
-
-.location-card::before {
-	content: url('$lib/images/location/location-pin.svg');
-}
-
-.fas{
-	margin: 0 1rem 1rem 0;
-}
-
-span {
-	margin: 1rem 0 0 1rem;
-	color: black;
+	width: 215px;
 }
 
 .card-detail {
@@ -140,6 +135,9 @@ span {
 	padding: 5px;
 	margin: 10px;
 	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content:flex-start;
 }
 
 .corner img {
@@ -148,17 +146,6 @@ span {
 	object-fit: contain;
 }
 
-.phone{
-	display: flex;
-	margin: 2rem;
-}
-
-.phone-btn {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: space-around;
-}
 
 nav {
 	display: flex;

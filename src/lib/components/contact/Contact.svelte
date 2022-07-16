@@ -7,12 +7,11 @@
 
 
 <section class="contact-component">
-	<!-- Adding Page-wrapper is creating horizontal scroll on devices ~280px width. Figure out why -->
-	<div class=""> 
-		<section>
-			<h2 id="contact">Contact</h2>
-			<p>(602) 612-2363</p>
-			<h4>Let us know how we're doing!</h4>
+	<section class="contact-wrapper">
+		<h2 id="contact">Contact</h2>
+		<p>Phone: (602) 612-2363</p>
+		<h4>Let us know how we're doing!</h4>
+		<div class="contact-card">
 			<form name="contact-form-test" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 				<input type="hidden" name="form-name" value="test" />
 				<div class="fields">
@@ -34,30 +33,42 @@
 					<button type="submit" class="button">Send</button>
 				</div>
 			</form>
-			<!-- Social Media -->
-			<ul class="icons">
-				<li><a class="icon" target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img src={Facebook} alt="Facebook Logo"></a></li>
-				<li><a class="icon" target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img src={Instagram} alt="Instagram Logo"></a></li>
-				<li><a class="icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img src={Yelp} alt="YelpLogo"></a></li>
-			</ul>
-		</section>
-	</div>
+		</div>
+		<!-- Social Media -->
+		<ul class="icons">
+			<li><a class="icon" target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img src={Facebook} alt="Facebook Logo"></a></li>
+			<li><a class="icon" target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img src={Instagram} alt="Instagram Logo"></a></li>
+			<li><a class="icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img src={Yelp} alt="YelpLogo"></a></li>
+		</ul>
+	</section>
 </section>
 
 <style>
-	
-     .contact-component {
-		display: flex;
-		justify-content: center;
-		text-align: center;
+	.contact-component {
 		background-color: var(--secondary-color);
-
 	}
 
+	.contact-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	
 	.contact-component section {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	h2, h4, p {
+		text-align: center;
+	}
+
+	h4{
+		margin: 1.38rem 0 1.38rem;
 	}
 
 	.contact-form{ 
@@ -81,7 +92,7 @@
 		border-radius: 1rem;
 		border: 1px solid var(--primary-color);
 		padding: 1rem;
-		width: 600px;
+		width: 100%;
 		background-color: var(--tertiary-color)
 	} 
 	.fields {
@@ -97,10 +108,33 @@
 		min-height: 100px;
 	}
 	button {
-		margin-top: 16px;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: inherit;
+		font-family: inherit;
+		color: var(--pure-white);
+		border: 2px solid var(--secondary-color);
+		padding: 10px;
+		background-color: var(--primary-color);
+		transition: all 0.2s;
+		cursor: pointer;
+		margin: 5px 0 16px 0;
+		transition: 0.2s;
+		letter-spacing: 0.1rem;
 	}
+	button:hover {
+    	background-color: var(--pure-white);
+		color: var(--primary-color);
+		border: 2px solid var(--primary-color);
+	}
+	.contact-card{
+		width: 90%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+}
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
 		form {
 		width: 400px;
 	} 
@@ -110,6 +144,6 @@
 		form {
 		width: 270px;
 	} 
-}
+} */
 
 </style>

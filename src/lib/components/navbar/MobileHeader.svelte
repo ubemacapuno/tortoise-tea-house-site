@@ -22,15 +22,15 @@
 	// End code for smooth scrolling to ID on click
 </script>
 <div class="header">
-	<div class="logo">
-		<a sveltekit:prefetch href="/">
-			<img class="logo-img" src={logoImg} alt="Placeholder" />
-		</a>
-	</div>
 	<div class="hamburger-menu">
 		<button class="menu-icon" on:click={() => (isMenuOpen = !isMenuOpen)}>
 			<Icon name="hamburger" color=var(--pure-white) />
 		</button>
+	</div>
+	<div class="logo">
+		<a sveltekit:prefetch href="/">
+			<img class="logo-img" src={logoImg} alt="Placeholder" />
+		</a>
 	</div>
 </div>
 <aside class="mobile-menu-wrapper" class:isMenuOpen>
@@ -72,9 +72,7 @@
 		cursor: pointer;
 		outline: inherit;
 	}
-	.hamburger-menu {
-		padding: 0px 20px 0px 0px;
-	}
+
 	.header {
 		background-color: var(--primary-color);
 		display: flex;
@@ -83,14 +81,8 @@
 		align-items: center;
 	}
 
-	.logo {
-		padding: 10px 0px 10px 70px;
-		object-fit: contain;
-		width: 30px;
-		height: auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	.logo, .menu-icon {
+		padding: 0.5rem 1rem;
 	}
 
 	.mobile-menu-wrapper {
@@ -141,7 +133,7 @@
     }
     .mobile-socials{
         position: absolute;
-        bottom: 0;
+        bottom: 70px;
         left: 0;
         right: 0;
     }
