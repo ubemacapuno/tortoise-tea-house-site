@@ -27,11 +27,6 @@
 			<Icon name="hamburger" color=var(--pure-white) />
 		</button>
 	</div>
-	<div class="logo">
-		<a sveltekit:prefetch href="/">
-			<img class="logo-img" src={logoImg} alt="Placeholder" />
-		</a>
-	</div>
 </div>
 <aside class="mobile-menu-wrapper" class:isMenuOpen>
 	<div class="mobile-menu">
@@ -49,7 +44,6 @@
                 <li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#location')} on:click={closeMenu}>Location</a></li>
 			</ul>
 		</nav>
-
         <div class="mobile-socials">
             <ul class="icons">
                 <li><a class="icon" target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img src={Facebook} alt="Facebook Logo"></a></li>
@@ -72,17 +66,24 @@
 		cursor: pointer;
 		outline: inherit;
 	}
+	.hamburger-menu{
+		display: flex;
+		justify-content: flex-end;
+	}
 
 	.header {
 		background-color: var(--primary-color);
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+		justify-content: flex-end;
 	}
 
-	.logo, .menu-icon {
-		padding: 0.5rem 1rem;
+	.menu-icon {
+		border: none;
+		font: inherit;
+		cursor: pointer;
+		outline: inherit;
+		padding: 1rem 1rem;
+		margin: 0 auto;
 	}
 
 	.mobile-menu-wrapper {
@@ -103,11 +104,12 @@
 		outline: inherit;
 	}
 	.close {
-		margin: 20px 20px;
+		margin: 0;
+		padding: 1rem 1rem 0 0;
 	}
 	.mobile-menu {
 		padding: var(--gap-largest);
-		background-color: var(--tertiary-color);
+		background-color: var(--primary-color);
 		height: 100vh;
 		width: 100vw;
 		overflow-y: scroll;
@@ -148,7 +150,7 @@
 	}
 	.copyright{
 		text-align: center;
-		color: var(--primary-color);
+		color: var(--tertiary-color);
 		position: relative;
 		bottom: 25px;
 	}
