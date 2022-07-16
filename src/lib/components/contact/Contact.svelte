@@ -45,7 +45,7 @@
 
 <style>
 	.contact-component {
-		background-color: var(--secondary-color);
+		background-image: linear-gradient(to right top,var(--primary-color),var(--tertiary-color),var(--secondary-color));
 	}
 
 	.contact-wrapper {
@@ -93,7 +93,7 @@
 		border: 1px solid var(--primary-color);
 		padding: 1rem;
 		width: 100%;
-		background-color: var(--tertiary-color)
+		background-color: hsla(228, 16%, 70%, 40%);
 	} 
 	.fields {
 		display: flex;
