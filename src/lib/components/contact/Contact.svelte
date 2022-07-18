@@ -44,6 +44,9 @@
 </section>
 
 <style>
+	h2, h4, p {
+		color: var(--text-color);
+	}
 	.contact-component {
 		background-image: linear-gradient(to right top,var(--primary-color),var(--tertiary-color),var(--secondary-color));
 	}
