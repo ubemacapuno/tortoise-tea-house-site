@@ -35,7 +35,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        opacity: 0.9;
+        opacity: 0.95;
         transition: all 0.2s;
     }
     .card:hover{
@@ -62,6 +62,7 @@
     }
     .card5{
             background-image: url("../../images/gallery/gallery-mashed-taro-with-jasmine-milk-tea.jpg");
+            background-position: 0 68%;
     }
     .card6{
             background-image: url("../../images/gallery/gallery-mangonada.jpg");
