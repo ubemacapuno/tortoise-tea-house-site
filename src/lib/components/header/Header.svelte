@@ -23,14 +23,11 @@
 		<nav>
 			<ul>
 				<!-- The following anchors below will use smooth scrolling to get to their respective element IDs -->
-				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#about')}>About</a></li>
-				<li><a href={'#'} on:click|preventDefault={() => scrollToElement('#menu')}>Menu</a></li>
-				<li>
-					<a href={'#'} on:click|preventDefault={() => scrollToElement('#contact')}>Contact</a>
-				</li>
-				<li>
-					<a href={'#'} on:click|preventDefault={() => scrollToElement('#location')}>Location</a>
-				</li>
+				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#about')}>About</a></li>
+				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#photo-gallery')}>Gallery</a></li>
+				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#menu')}>Menu</a></li>
+				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#contact')}>Contact</a></li>
+				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#location')}>Location</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -63,11 +60,9 @@
 		background-color: var(--secondary-color);
 		height: 100%;
 	}
-
 	.wrapper {
 		margin-bottom: 100px;
 	}
-
 	.header-top {
 		display: flex;
 		flex-direction: row;
@@ -75,31 +70,26 @@
 		padding-right: 100px;
 		background-color: var(--primary-color);
 	}
-
 	.header-body {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 	}
-
 	p {
 		line-height: 1.4rem;
 		margin: 0;
 		text-align: center;
 	}
-
 	.large-logo {
 		width: 95%;
 		max-width: 575px;
 	}
-
 	.location-card,
 	.phone-card {
 		color: white;
 		width: 215px;
 	}
-
 	.card-detail {
 		border: 1px solid black;
 		border-radius: 10px;
@@ -108,11 +98,9 @@
 		margin: 10px;
 		background-color: white;
 	}
-
 	.cards {
 		margin: 2rem 0;
 	}
-
 	.card-detail-alternate {
 		border: 1px solid black;
 		border-radius: 10px;
@@ -124,12 +112,10 @@
 		align-items: center;
 		justify-content: flex-start;
 	}
-
 	nav {
 		display: flex;
 		justify-content: center;
 	}
-
 	ul {
 		position: relative;
 		padding: 0;
@@ -142,12 +128,10 @@
 		background: var(--background);
 		background-size: contain;
 	}
-
 	li {
 		position: relative;
 		height: 100%;
 	}
-
 	nav a {
 		display: flex;
 		height: 100%;
@@ -161,22 +145,18 @@
 		text-decoration: none;
 		transition: color 0.2s linear;
 	}
-
 	a:hover,
 	img:hover {
 		color: var(--tertiary-color);
 	}
-
 	@media (max-width: 950px) {
-		header {
-			display: flex;
-			flex-direction: column;
-			padding: 0;
-			margin: 0;
-			width: 100%;
+		.header-top{
+			padding-right: 0;
+		}
+		.nav-link{
+			font-size: 0.8rem;
 		}
 	}
-
 	@media (max-width: 450px) {
 		header {
 			height: 100vh;
