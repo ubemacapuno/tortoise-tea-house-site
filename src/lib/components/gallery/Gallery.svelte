@@ -70,14 +70,14 @@
     }
     .card7{
             background-image: url("../../images/gallery/gallery-super-passion-fruit.jpg");
-            background-position: 0 5%;
+            background-position: 0 15%;
     }
 
 @media screen and (min-width: 600px) {
     /* use card-tall and card-wide accordingly with taller/wider images: */
-  .card-tall {
+  /* .card-tall {
     grid-row: span 2 / auto;
-  }
+  } */
   .card-wide {
     grid-column: span 2 / auto;
   }
