@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Icon from '$lib/icons/Icon.svelte';
-	import logoImg from '$lib/components/header/placeholder-logo.svg'
     import Facebook from '$lib/images/socials/socials-facebook.svg'
 	import Instagram from '$lib/images/socials/socials-instagram.svg'
 	import Yelp from '$lib/images/socials/socials-yelp.svg'
@@ -24,7 +23,7 @@
 <div class="header">
 	<div class="hamburger-menu">
 		<button class="menu-icon" on:click={() => (isMenuOpen = !isMenuOpen)}>
-			<Icon name="hamburger" color=var(--pure-white) />
+			<Icon name="hamburger" color=var(--primary-color) />
 		</button>
 	</div>
 </div>
@@ -72,9 +71,10 @@
 	}
 
 	.header {
-		background-color: var(--primary-color);
+		background-color: var(--secondary-color);
 		display: flex;
 		justify-content: flex-end;
+		outline: 1px solid var(--secondary-color);
 	}
 
 	.menu-icon {
@@ -141,6 +141,12 @@
     }
 	.isMenuOpen {
 		left: 0;
+	}
+	.icon{
+		transition: all .2s;
+	}
+	.icon:hover{
+		transform: scale(1.1) 
 	}
 	.icons{
 		display: flex;

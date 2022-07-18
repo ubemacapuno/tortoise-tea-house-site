@@ -68,7 +68,6 @@
 
 <style>
 header {
-	height: 1050px;
 	background-color: var(--secondary-color);
 }
 

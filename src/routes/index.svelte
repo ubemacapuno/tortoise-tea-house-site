@@ -6,6 +6,7 @@
 	import FruitTea from '$lib/components/menu/FruitTea.svelte';
 	import MilkTea from '$lib/components/menu/MilkTea.svelte';
 	import Coffee from '$lib/components/menu/Coffee.svelte';
+	import Gallery from '$lib/components/gallery/Gallery.svelte';
 </script>
 
 <svelte:head>
@@ -25,10 +26,10 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
 		</section>
 	</section>
+	<Gallery />
 	<section class="index-header">
 		<h2 id="menu">Menu</h2>
 	</section>
-	
 	<Specialty />
 	<MilkTea />
 	<FruitTea />
@@ -38,18 +39,6 @@
 	
 	
 </div>
-
-<!-- <section class="index-header">
-	<h2 id="menu">Menu</h2>
-</section>
-
-<Specialty />
-<MilkTea />
-<FruitTea />
-<Toppings />
-<Coffee />
-<Teas /> -->
-
 
 <style>
 
