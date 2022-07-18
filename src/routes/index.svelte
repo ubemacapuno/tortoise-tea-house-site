@@ -20,7 +20,7 @@
 	</section>
 
 	<section class="index-body">
-		<img class="test-img index-left" src="" alt="Test">
+		<img class="test-img index-left" alt="Test">
 		<section class="index-right">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto ipsa minima, corrupti eaque, dicta voluptatibus aperiam quibusdam, sequi eos sed corporis id incidunt. Ut sint in doloribus quod minima!</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
@@ -41,8 +41,6 @@
 </div>
 
 <style>
-
-
 	.index-header {
 		text-align: center;
 	}
@@ -69,7 +67,7 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		padding: 1rem;
+		padding: 1rem 0;
 		width: 100%;
 		max-width: 1024px;
 		margin: 0 auto;
@@ -77,9 +75,7 @@
 	}
 	
 	.test-img {
-		width: 350px;
-		height: 350px;
-		outline: solid var(--primary-color);
+		background-image:url('../lib/images/gallery/gallery-wall.jpg');
 	}
 
 @media screen and (max-width: 900px) {
@@ -100,8 +96,6 @@
 
 @media screen and (max-width: 600px) {
 	.test-img {
-		width: 200px;
-		height: 200px;
 		outline: solid var(--primary-color);
 	}
 }

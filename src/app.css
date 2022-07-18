@@ -154,7 +154,12 @@ small, .text_small {font-size: 0.8rem;}
 	max-width: 1200px;
 }
 
-
+.social-icon{
+	transition: all .2s;
+	}
+.social-icon:hover{
+	transform: scale(1.1) rotate(10deg);
+	}
 /*              */
 /* Menu Styling */
 /*              */

@@ -37,17 +37,18 @@
 		<nav class="mobile-nav">
 			<ul>
                 <!-- The following anchors below will use smooth scrolling to get to their respective element IDs -->
-                <li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#menu')} on:click={closeMenu}>Menu</a></li>
 				<li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#about')} on:click={closeMenu}>About</a></li>
+				<li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#photo-gallery')} on:click={closeMenu}>Gallery</a></li>
+                <li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#menu')} on:click={closeMenu}>Menu</a></li>
 				<li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#contact')} on:click={closeMenu}>Contact</a></li>
                 <li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#location')} on:click={closeMenu}>Location</a></li>
 			</ul>
 		</nav>
         <div class="mobile-socials">
             <ul class="icons">
-                <li><a class="icon" target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img src={Facebook} alt="Facebook Logo"></a></li>
-                <li><a class="icon" target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img src={Instagram} alt="Instagram Logo" class="instagram"></a></li>
-                <li><a class="icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img src={Yelp} alt="YelpLogo"></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img class="social-icon" src={Facebook} alt="Facebook Logo"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img class="social-icon" src={Instagram} alt="Instagram Logo"></a></li>
+                <li><a class="social-icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img class="social-icon"src={Yelp} alt="YelpLogo"></a></li>
             </ul>
 			<div>
 				<p class="copyright">© 2022 Tortoise Tea House</p>
@@ -141,12 +142,6 @@
     }
 	.isMenuOpen {
 		left: 0;
-	}
-	.icon{
-		transition: all .2s;
-	}
-	.icon:hover{
-		transform: scale(1.1) 
 	}
 	.icons{
 		display: flex;
