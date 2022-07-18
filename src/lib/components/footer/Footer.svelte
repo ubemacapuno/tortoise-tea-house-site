@@ -30,4 +30,7 @@
 			padding: 40px 0;
 		}
 	}
+	.copyright{
+		margin: 0 auto;
+	}
 </style>

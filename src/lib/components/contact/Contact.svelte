@@ -8,8 +8,14 @@
 
 <section class="contact-component">
 	<section class="contact-wrapper">
-		<h2 id="contact">Contact</h2>
+		<h2 id="contact">Contact Us</h2>
 		<p>Phone: (602) 612-2363</p>
+			<!-- Social Media -->
+			<ul class="icons">
+				<li><a target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img class="social-icon" src={Facebook} alt="Facebook Logo"></a></li>
+				<li><a target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img class="social-icon" src={Instagram} alt="Instagram Logo"></a></li>
+				<li><a target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img class="social-icon" src={Yelp} alt="YelpLogo"></a></li>
+			</ul>
 		<h4>Let us know how we're doing!</h4>
 		<div class="contact-card">
 			<form name="contact-form-test" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -34,12 +40,6 @@
 				</div>
 			</form>
 		</div>
-		<!-- Social Media -->
-		<ul class="icons">
-			<li><a class="icon" target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img src={Facebook} alt="Facebook Logo"></a></li>
-			<li><a class="icon" target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img src={Instagram} alt="Instagram Logo"></a></li>
-			<li><a class="icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img src={Yelp} alt="YelpLogo"></a></li>
-		</ul>
 	</section>
 </section>
 
@@ -87,8 +87,8 @@
 		justify-content: space-around;
 	}
 
-	.icon {
-		margin: 1rem;
+	.social-icon {
+		margin: 0 1rem;
 	} 
 
 	form {
@@ -97,6 +97,7 @@
 		padding: 1rem;
 		width: 100%;
 		background-color: hsla(228, 16%, 70%, 40%);
+		margin-bottom: 3rem;
 	} 
 	.fields {
 		display: flex;
