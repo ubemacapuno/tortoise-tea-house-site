@@ -2,6 +2,7 @@
 	// import { page } from '$app/stores';
 	import Phone from '$lib/images/icons/phone.svg';
 	import largeLogo from '$lib/components/header/tortoise-tea-house-logo-main.jpg';
+	// import largeLogo from '$lib/components/header/tortoise-tea-house.png';
 	import Location from '$lib/images/location/location-pin.svg';
 	// This code below allows for smooth scrolling to ID on click
 	const scrollToElement = (selector: any) => {
