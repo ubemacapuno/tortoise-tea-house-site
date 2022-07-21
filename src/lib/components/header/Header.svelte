@@ -62,7 +62,7 @@
 		height: 100%;
 	}
 	.wrapper {
-		margin-bottom: 100px;
+		padding-bottom: 100px;
 	}
 	.header-top {
 		display: flex;

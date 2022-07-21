@@ -16,5 +16,11 @@
 <Footer />
 
 <style>
+	main{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		overflow-y: scroll;
+	}
 
 </style>
