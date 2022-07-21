@@ -7,6 +7,7 @@
 	import MilkTea from '$lib/components/menu/MilkTea.svelte';
 	import Coffee from '$lib/components/menu/Coffee.svelte';
 	import Gallery from '$lib/components/gallery/Gallery.svelte';
+	import Wall from '$lib/images/gallery/gallery-wall.jpg'
 </script>
 
 <svelte:head>
@@ -14,18 +15,20 @@
 	<meta name="Tortoise Tea House Main Page" content="Svelte demo app" />
 </svelte:head>
 
-<div class="page-wrapper">
+<section class="about-us">
 	<section class="index-header">
-		<h2 id="about">About Us</h2>
+	<h2 id="about">About Us</h2>
 	</section>
-
 	<section class="index-body">
-		<img class="test-img index-left" alt="Test">
+		<img src={Wall} class="about-img index-left" alt="Test">
 		<section class="index-right">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto ipsa minima, corrupti eaque, dicta voluptatibus aperiam quibusdam, sequi eos sed corporis id incidunt. Ut sint in doloribus quod minima!</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos aliquam dolores quaerat itaque quasi sunt? Sunt odio nulla omnis nostrum incidunt quo consequuntur ea voluptatem possimus, laudantium vitae minus.</p>
 		</section>
 	</section>
+</section>
+<div class="page-wrapper">
 	<Gallery />
 	<section class="index-header">
 		<h2 id="menu">Menu</h2>
@@ -36,11 +39,30 @@
 	<Toppings />
 	<Coffee />
 	<Teas />
-	
-	
 </div>
 
 <style>
+	#about, .index-right p {
+		color: var(--pure-white);
+	}
+	.about-us{
+		min-height: 60vh;
+		background-color: var(--primary-color);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-attachment:fixed;
+	}
+	.about-img {
+			margin: 1rem;
+			width: 440px;
+			max-width: 80%;
+			border-radius: 5%;
+		}
+	h2{
+		margin-top: 0;
+		padding-top: 1rem;
+	}
 	.index-header {
 		text-align: center;
 	}
@@ -55,7 +77,7 @@
 	}
 
 	.index-left {
-		padding-right: 10px;
+		/* padding-right: 10px; */
 		margin-right: 20px;
 		display: flex;
 		align-items: center;
@@ -67,15 +89,11 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		padding: 1rem 0;
+		padding: 1rem;
 		width: 100%;
 		max-width: 1024px;
 		margin: 0 auto;
 		box-sizing: border-box;
-	}
-	
-	.test-img {
-		background-image:url('../lib/images/gallery/gallery-wall.jpg');
 	}
 
 @media screen and (max-width: 900px) {
@@ -88,15 +106,9 @@
 			padding: 0;
 			margin: 0;
 		}
-
-		.test-img {
-			margin: 1rem;
-		}
 }
 
 @media screen and (max-width: 600px) {
-	.test-img {
-		outline: solid var(--primary-color);
-	}
+
 }
 </style>

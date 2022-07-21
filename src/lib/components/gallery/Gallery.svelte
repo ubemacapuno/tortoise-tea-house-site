@@ -70,7 +70,7 @@
     }
     .card7{
             background-image: url("../../images/gallery/gallery-super-passion-fruit.jpg");
-            background-position: 0 15%;
+            background-position: 0 12%;
     }
 
 @media screen and (min-width: 600px) {

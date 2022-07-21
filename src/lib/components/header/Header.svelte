@@ -2,6 +2,7 @@
 	// import { page } from '$app/stores';
 	import Phone from '$lib/images/icons/phone.svg';
 	import largeLogo from '$lib/components/header/tortoise-tea-house-logo-main.jpg';
+	// import largeLogo from '$lib/components/header/tortoise-tea-house.png';
 	import Location from '$lib/images/location/location-pin.svg';
 	// This code below allows for smooth scrolling to ID on click
 	const scrollToElement = (selector: any) => {
@@ -37,7 +38,7 @@
 
 		<!-- Cards -->
 		<div class="cards">
-			<p class="card-detail">Wed - Mon: 12pm - 8pm</p>
+			<p class="card-detail">Wednesday to Monday <br /> 12pm - 8pm</p>
 			<a
 				class="card-detail-alternate"
 				title="See us on Google Maps"
@@ -47,9 +48,9 @@
 				<p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p>
 			</a>
 
-			<a class="card-detail-alternate" title="Call us at 1-602-612-2363" href="tel:1-602-612-2363">
+			<a class="card-detail-alternate" title="Call us at 1-602-612-2363" href="tel:16026122363">
 				<img src={Phone} alt="Tortoise Tea House Phone" aria-hidden="true" />
-				<p class="phone-card">Tel: (602) 612-2363</p>
+				<p class="phone-card">(602) 612-2363</p>
 			</a>
 		</div>
 	</div>
@@ -61,7 +62,7 @@
 		height: 100%;
 	}
 	.wrapper {
-		margin-bottom: 100px;
+		padding-bottom: 100px;
 	}
 	.header-top {
 		display: flex;
@@ -91,10 +92,9 @@
 		width: 215px;
 	}
 	.card-detail {
-		border: 1px solid black;
-		border-radius: 10px;
+		border-radius: 25px;
 		width: 250px;
-		padding: 5px;
+		padding: 1rem;
 		margin: 10px;
 		background-color: white;
 	}
@@ -102,15 +102,14 @@
 		margin: 2rem 0;
 	}
 	.card-detail-alternate {
-		border: 1px solid black;
-		border-radius: 10px;
+		border-radius: 25px;
 		width: 250px;
-		padding: 5px;
+		padding: 1rem;
 		margin: 10px;
 		background-color: var(--primary-color);
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: center;
 	}
 	nav {
 		display: flex;

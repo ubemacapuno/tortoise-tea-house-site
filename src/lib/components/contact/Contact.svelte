@@ -9,7 +9,7 @@
 <section class="contact-component">
 	<section class="contact-wrapper">
 		<h2 id="contact">Contact Us</h2>
-		<p>Phone: (602) 612-2363</p>
+		<p>Phone: <a href="tel:+6026122363">(602) 612-2363</p>
 			<!-- Social Media -->
 			<ul class="icons">
 				<li><a target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img class="social-icon" src={Facebook} alt="Facebook Logo"></a></li>
@@ -22,11 +22,11 @@
 				<input type="hidden" name="form-name" value="test" />
 				<div class="fields">
 					<div class="field half">
-						<p class="contact-form">Name (required)</p>
+						<p class="contact-form">Name</p>
 						<input type="text" name="name" id="name" required/>
 					</div>
 					<div class="field half">
-						<p class="contact-form">Email (required)</p>
+						<p class="contact-form">Email</p>
 						<input type="email" name="email" id="email" required/>
 					</div>
 					<div class="field">
@@ -44,8 +44,19 @@
 </section>
 
 <style>
-	h2, h4, p {
+	h2, p {
 		color: var(--text-color);
+	}
+	h4 {
+		color: var(--pure-white);
+	}
+	a{
+		color: var(--primary-color);
+		font-weight: bold;
+		transition: all 0.2s;
+	}
+	a:hover{
+		color: var(--pure-white);
 	}
 	.contact-component {
 		background-image: linear-gradient(to right top,var(--primary-color),var(--tertiary-color),var(--secondary-color));
@@ -76,7 +87,7 @@
 
 	.contact-form{ 
 		/* p elements */
-		color: var(--text-color);
+		color: var(--pure-white);
 		text-align: left;
 		margin: 1rem 0;
 	}
@@ -93,7 +104,7 @@
 
 	form {
 		border-radius: 1rem;
-		border: 1px solid var(--primary-color);
+		border: 3px solid var(--pure-white);
 		padding: 1rem;
 		width: 100%;
 		background-color: hsla(228, 16%, 70%, 40%);
@@ -137,17 +148,5 @@
 		align-items: center;
 		justify-content: center;
 }
-
-/* @media (max-width: 650px) {
-		form {
-		width: 400px;
-	} 
-}
-
-@media (max-width: 430px) {
-		form {
-		width: 270px;
-	} 
-} */
 
 </style>
