@@ -16,6 +16,10 @@
 </div>
 
 <style>
+    
+h2,p{
+    color: var(--text-color);
+}
 .contact-component{
     background-color: var(--secondary-color);
 }

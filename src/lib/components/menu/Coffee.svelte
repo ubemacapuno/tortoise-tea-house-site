@@ -75,6 +75,7 @@
 </section>
 <style>
     .comp-container{
+        display: none;
         width: 80px;
         height: 80px;
         margin-right: 1.5em;

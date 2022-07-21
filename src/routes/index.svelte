@@ -15,7 +15,6 @@
 	<meta name="Tortoise Tea House Main Page" content="Svelte demo app" />
 </svelte:head>
 
-
 <section class="about-us">
 	<section class="index-header">
 	<h2 id="about">About Us</h2>
@@ -26,16 +25,11 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto ipsa minima, corrupti eaque, dicta voluptatibus aperiam quibusdam, sequi eos sed corporis id incidunt. Ut sint in doloribus quod minima!</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos aliquam dolores quaerat itaque quasi sunt? Sunt odio nulla omnis nostrum incidunt quo consequuntur ea voluptatem possimus, laudantium vitae minus.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus laudantium eligendi eveniet excepturi cumque numquam, ipsa libero animi sit, asperiores enim error, distinctio provident unde explicabo quia? At, quo?</p>
 		</section>
 	</section>
 </section>
-
 <div class="page-wrapper">
-
 	<Gallery />
-	<!-- <Lazy /> -->
-	
 	<section class="index-header">
 		<h2 id="menu">Menu</h2>
 	</section>
@@ -66,7 +60,8 @@
 			border-radius: 5%;
 		}
 	h2{
-		margin-top: 1rem;
+		margin-top: 0;
+		padding-top: 1rem;
 	}
 	.index-header {
 		text-align: center;
