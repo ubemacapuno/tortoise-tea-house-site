@@ -21,7 +21,7 @@
 	<h2 id="about">About Us</h2>
 	</section>
 	<section class="index-body">
-		<img src={Wall} class="test-img index-left" alt="Test">
+		<img src={Wall} class="about-img index-left" alt="Test">
 		<section class="index-right">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto ipsa minima, corrupti eaque, dicta voluptatibus aperiam quibusdam, sequi eos sed corporis id incidunt. Ut sint in doloribus quod minima!</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
@@ -59,6 +59,12 @@
 		background-size: auto;
 		background-attachment:fixed;
 	}
+	.about-img {
+			margin: 1rem;
+			width: 440px;
+			max-width: 80%;
+			border-radius: 5%;
+		}
 	h2{
 		margin-top: 1rem;
 	}
@@ -76,7 +82,7 @@
 	}
 
 	.index-left {
-		padding-right: 10px;
+		/* padding-right: 10px; */
 		margin-right: 20px;
 		display: flex;
 		align-items: center;
@@ -105,16 +111,9 @@
 			padding: 0;
 			margin: 0;
 		}
-
-		.test-img {
-			margin: 1rem;
-			width: 100%;
-		}
 }
 
 @media screen and (max-width: 600px) {
-	.test-img {
-		outline: solid var(--primary-color);
-	}
+
 }
 </style>

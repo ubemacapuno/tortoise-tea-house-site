@@ -189,6 +189,7 @@ small, .text_small {font-size: 0.8rem;}
 
 .menu-item-image {
 	/* display: none; */
+	visibility: hidden;
 	width: 80px;
 	height: 80px;
 	outline: solid var(--primary-color); /*outline for testing*/

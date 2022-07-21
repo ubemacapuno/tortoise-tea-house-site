@@ -28,7 +28,7 @@
     img {
       width: 80px;
       height: 80px;
-      outline: solid var(--primary-color); /*outline for testing*/
+      /* outline: solid var(--primary-color); */
       flex-shrink: 0;
       object-fit: cover;
       margin-right: 1.5em;
