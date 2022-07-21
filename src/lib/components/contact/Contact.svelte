@@ -8,7 +8,7 @@
 
 <section class="contact-component">
 	<section class="contact-wrapper">
-		<h2 id="contact">Contact Us</h2>
+		<h2 id="contact">Let's Connect</h2>
 		<p>Phone: <a href="tel:+6026122363">(602) 612-2363</p>
 			<!-- Social Media -->
 			<ul class="icons">
@@ -44,16 +44,14 @@
 </section>
 
 <style>
-	h2, p {
+	h2, h4, p {
 		color: var(--text-color);
-	}
-	h4 {
-		color: var(--pure-white);
 	}
 	a{
 		color: var(--primary-color);
 		font-weight: bold;
 		transition: all 0.2s;
+		letter-spacing: 1px;
 	}
 	a:hover{
 		color: var(--pure-white);
@@ -104,7 +102,7 @@
 
 	form {
 		border-radius: 1rem;
-		border: 3px solid var(--pure-white);
+		border: 2px solid var(--pure-white);
 		padding: 1rem;
 		width: 100%;
 		background-color: hsla(228, 16%, 70%, 40%);
