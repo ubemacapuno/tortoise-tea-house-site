@@ -1,15 +1,12 @@
 <script lang="ts">
-	// import { page } from '$app/stores';
 	import Phone from '$lib/images/icons/phone.svg';
 	// import largeLogo from '$lib/components/header/tortoise-tea-house-logo-main.jpg';
 	import largeLogo from '$lib/components/header/tortoise-tea-house.png';
 	import Location from '$lib/images/location/location-pin.svg';
-	import Landscape from "$lib/images/background/desert-background.png"
 	// This code below allows for smooth scrolling to ID on click
 	const scrollToElement = (selector: any) => {
 		const element = document.querySelector(selector);
 		if (!element) return;
-
 		let position = element.getBoundingClientRect().top;
 		let offset = position + window.pageYOffset;
 		window.scrollTo({
@@ -61,7 +58,7 @@
 	header {
 		background-color: var(--secondary-color);
 		background-image: url("$lib/images/background/desert-background.png");
-		background-position: center center;
+		background-position: bottom;
 		background-repeat: no-repeat;
 		background-size:cover;
 		background-attachment:fixed;
@@ -179,5 +176,8 @@
 		.header-top {
 			display: none;
 		}
+		header {
+		background-position: 55% 0%;
+	}
 	}
 </style>
