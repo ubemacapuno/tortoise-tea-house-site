@@ -15,6 +15,19 @@
 		});
 	};
 	// End code for smooth scrolling to ID on click
+
+	//trick to viewport units on mobile
+	// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+	let vh = window.innerHeight * 0.01;
+	// Then we set the value in the --vh custom property to the root of the document
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+	// We listen to the resize event
+	window.addEventListener('resize', () => {
+	// We execute the same script as before
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 </script>
 
 <header class="wrapper">
@@ -171,7 +184,10 @@
 	}
 	@media (max-width: 450px) {
 		header {
-			height: 100% 
+			height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+			height: calc(var(--vh, 1vh) * 100);
+			margin: 0 auto;
+			max-width: 30%;
 		}
 		.header-top {
 			display: none;
