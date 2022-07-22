@@ -15,6 +15,7 @@
 		});
 	};
 	// End code for smooth scrolling to ID on click
+
 </script>
 
 <header class="wrapper">
@@ -171,7 +172,7 @@
 	}
 	@media (max-width: 450px) {
 		header {
-			height: 100% 
+			height: 900px;
 		}
 		.header-top {
 			display: none;
