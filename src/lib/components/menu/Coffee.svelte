@@ -1,17 +1,11 @@
 <script>
+    //Testing for lazyloading component below (ImageLoader, test images):
     import ImageLoader from '$lib/components/image/ImageLoader.svelte';
-    import Test1 from '$lib/images/menu/test1.jpg'
     import Test2 from '$lib/images/menu/test2.jpg'
     import Test3 from '$lib/images/menu/test3.jpg'
-    import Test4 from '$lib/images/menu/test4.jpg'
-    import Test5 from '$lib/images/menu/test5.jpg'
-    import Test6 from '$lib/images/menu/test6.jpg'
-    import Test7 from '$lib/images/menu/test7.jpg'
-    import Test8 from '$lib/images/menu/test8.jpg'
 </script>
 
 <section class=page-wrapper>
-    <!-- <Accordion title="Coffee"> -->
         <div class="menu">
             
             <h3 class="menu-group-heading">
@@ -71,7 +65,6 @@
                             
             </div>
         </div>
-    <!-- </Accordion> -->
 </section>
 <style>
     .comp-container{

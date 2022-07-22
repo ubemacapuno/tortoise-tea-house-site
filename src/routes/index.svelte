@@ -8,8 +8,10 @@
 	import Coffee from '$lib/components/menu/Coffee.svelte';
 	import Gallery from '$lib/components/gallery/Gallery.svelte';
 	import Wall from '$lib/images/gallery/gallery-wall.jpg'
+	import Seo from '$lib/components/Seo.svelte'
 </script>
 
+<Seo pathname="/" />
 <svelte:head>
 	<title>Tortoise Tea House</title>
 	<meta name="Tortoise Tea House Main Page" content="Svelte demo app" />

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Phone from '$lib/images/icons/phone.svg';
-	// import largeLogo from '$lib/components/header/tortoise-tea-house-logo-main.jpg';
-	import largeLogo from '$lib/components/header/tortoise-tea-house.png';
+	// import largeLogo from '$lib/components/header/tortoise-tea-house.png';
+	import largeLogo from '$lib/components/header/tortoise-tea-house.jpg';
 	import Location from '$lib/images/location/location-pin.svg';
 	// This code below allows for smooth scrolling to ID on click
 	const scrollToElement = (selector: any) => {
@@ -87,11 +87,11 @@
 		text-align: center;
 	}
 	.large-logo {
+		opacity: 80%;
 		width: 85%;
 		max-width: 575px;
 		border-radius: 50%;
-		border: 1px solid var(--color-transparent-alternate);
-		background-color: var(--color-transparent);
+		border: 1px solid var(--color-transparent);
 		margin: 3rem 0 1rem 0;
 	}
 	.location-card,

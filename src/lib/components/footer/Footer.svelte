@@ -25,7 +25,7 @@
 
 	.copyright {
 		margin: 1rem 0 0 0;
-		color: var(--tertiary-color);
+		color: var(--pure-white);
 	}
 
 	@media (min-width: 480px) {
