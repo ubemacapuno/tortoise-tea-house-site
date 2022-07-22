@@ -57,7 +57,7 @@
 
 <style>
 	header {
-		background-color: var(--secondary-color);
+		background-color: #FBF1E9;
 		background-image: url("$lib/images/background/desert-background.png");
 		background-position: bottom;
 		background-repeat: no-repeat;
@@ -172,15 +172,12 @@
 	}
 	@media (max-width: 450px) {
 		header {
+			background-position: bottom;
 			min-height: 100vh;
-			/* mobile viewport bug fix */
-			min-height: -webkit-fill-available;
+			background-size:auto;
 		}
 		.header-top {
 			display: none;
 		}
-		header {
-		background-position: 55% 0%;
-	}
 	}
 </style>
