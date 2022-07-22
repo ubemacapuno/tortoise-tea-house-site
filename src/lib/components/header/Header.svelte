@@ -58,7 +58,7 @@
 <style>
 	header {
 		background-color: #FBF1E9;
-		background-image: url("$lib/images/background/desert-background.png");
+		background-image: url("$lib/images/background/desert-background.jpg");
 		background-position: bottom;
 		background-repeat: no-repeat;
 		background-size:cover;
@@ -172,9 +172,8 @@
 	}
 	@media (max-width: 450px) {
 		header {
-			background-position: bottom;
-			height: 900px;
-			background-size: 1000px;
+		background-size: 1000px 648px;
+		background-attachment:scroll;
 		}
 		.header-top {
 			display: none;
