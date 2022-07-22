@@ -171,7 +171,7 @@
 	}
 	@media (max-width: 450px) {
 		header {
-			height: 100vh;
+			height: 100% 
 		}
 		.header-top {
 			display: none;
