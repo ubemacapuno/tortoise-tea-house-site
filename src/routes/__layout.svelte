@@ -6,17 +6,27 @@
 	import Location from '$lib/components/location/Location.svelte';
 	import '../app.css';
 </script>
-<MobileHeader />
-<Header />
-<div class="slot-background">
-	<slot />
-</div>
-<Contact />
-<Location />
-<Footer />
+<div class="wrapper-hack">
+	<MobileHeader />
+	<Header />
+	<div class="slot-background">
+		<slot />
+	</div>
+	<Contact />
+	<Location />
+	<Footer />
+</div>	
 
 <style>
 .slot-background {
 	background-color: var(--secondary-color);
 }
+.wrapper-hack {
+    position: absolute;
+    top: 0.5px;
+    left: 0;
+    right: 0;
+    bottom: 0.5px;
+}
+
 </style>
