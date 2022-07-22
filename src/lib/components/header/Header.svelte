@@ -172,7 +172,9 @@
 	}
 	@media (max-width: 450px) {
 		header {
-			height: 900px;
+			min-height: 100vh;
+			/* mobile viewport bug fix */
+			min-height: -webkit-fill-available;
 		}
 		.header-top {
 			display: none;

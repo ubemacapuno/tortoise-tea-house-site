@@ -18,5 +18,6 @@
 <style>
 .slot-background {
 	background-color: var(--secondary-color);
+	height: -webkit-fill-available;
 }
 </style>
