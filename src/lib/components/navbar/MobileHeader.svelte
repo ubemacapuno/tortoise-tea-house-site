@@ -1,4 +1,5 @@
 <script lang="ts">
+	let copyrightYear = new Date().getFullYear() 
 	import Icon from '$lib/icons/Icon.svelte';
     import Facebook from '$lib/images/socials/socials-facebook.svg'
 	import Instagram from '$lib/images/socials/socials-instagram.svg'
@@ -51,7 +52,7 @@
                 <li><a class="social-icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img class="social-icon"src={Yelp} alt="YelpLogo"></a></li>
             </ul>
 			<div>
-				<p class="copyright">© 2022 Tortoise Tea House</p>
+				<p class="copyright">© {copyrightYear} Tortoise Tea House</p>
 			</div>
         </div>
 	</div>
@@ -72,10 +73,10 @@
 	}
 
 	.header {
-		background-color: var(--secondary-color);
+		background-color: #FBF1E9;
 		display: flex;
 		justify-content: flex-end;
-		outline: 1px solid var(--secondary-color);
+		outline: 1px solid #FBF1E9;
 	}
 
 	.menu-icon {

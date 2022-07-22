@@ -127,6 +127,7 @@
 		font-family: inherit;
 		color: var(--pure-white);
 		border: 2px solid var(--secondary-color);
+		border-radius: 10%;
 		padding: 10px;
 		background-color: var(--primary-color);
 		transition: all 0.2s;
