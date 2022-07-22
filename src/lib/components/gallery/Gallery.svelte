@@ -1,8 +1,8 @@
 <script>
 	// import Gallery from 'svelte-image-gallery'
 </script>
-<!-- <h2 id="photo-gallery">Photo Gallery</h2> -->
-<div class = "photo-grid">
+
+<div class="photo-grid">
     <div class="card card3" alt="Tortoise Tea House Combo 3"></div>
     <div class="card card1 card-wide" alt="Tortoise Tea House Combo 1"></div>
     <div class="card card4" alt="House Milk Tea with Boba"></div>

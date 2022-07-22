@@ -24,7 +24,6 @@
 			<ul>
 				<!-- The following anchors below will use smooth scrolling to get to their respective element IDs -->
 				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#about')}>About</a></li>
-				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#photo-gallery')}>Gallery</a></li>
 				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#menu')}>Menu</a></li>
 				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#contact')}>Contact</a></li>
 				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#location')}>Location</a></li>

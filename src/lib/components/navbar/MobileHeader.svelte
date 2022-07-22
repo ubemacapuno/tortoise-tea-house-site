@@ -39,7 +39,6 @@
 			<ul>
                 <!-- The following anchors below will use smooth scrolling to get to their respective element IDs -->
 				<li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#about')} on:click={closeMenu}>About</a></li>
-				<li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#photo-gallery')} on:click={closeMenu}>Gallery</a></li>
                 <li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#menu')} on:click={closeMenu}>Menu</a></li>
 				<li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#contact')} on:click={closeMenu}>Contact</a></li>
                 <li class="page-link"><a href={'#'} on:click|preventDefault={() => scrollToElement('#location')} on:click={closeMenu}>Location</a></li>
