@@ -173,8 +173,8 @@
 	@media (max-width: 450px) {
 		header {
 			background-position: bottom;
-			min-height: 100vh;
-			background-size:auto;
+			height: 900px;
+			background-size: 1000px;
 		}
 		.header-top {
 			display: none;
