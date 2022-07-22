@@ -14,19 +14,11 @@
 		<img src={Landscape} alt="Desert Landscape Painting" loading="lazy">
 	</header>
 </div> -->
-
 <slot />
-
 <Contact />
 <Location />
 <Footer />
 
 <style>
-	/* main{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		overflow-y: scroll;
-	} */
 
 </style>

@@ -57,7 +57,7 @@
 			margin: 1rem;
 			width: 440px;
 			max-width: 80%;
-			border-radius: 5%;
+			border-radius: 3%;
 		}
 	h2{
 		margin-top: 0;
@@ -77,7 +77,6 @@
 	}
 
 	.index-left {
-		/* padding-right: 10px; */
 		margin-right: 20px;
 		display: flex;
 		align-items: center;

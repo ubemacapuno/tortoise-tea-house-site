@@ -1,9 +1,10 @@
 <script lang="ts">
 	// import { page } from '$app/stores';
 	import Phone from '$lib/images/icons/phone.svg';
-	import largeLogo from '$lib/components/header/tortoise-tea-house-logo-main.jpg';
-	// import largeLogo from '$lib/components/header/tortoise-tea-house.png';
+	// import largeLogo from '$lib/components/header/tortoise-tea-house-logo-main.jpg';
+	import largeLogo from '$lib/components/header/tortoise-tea-house.png';
 	import Location from '$lib/images/location/location-pin.svg';
+	import Landscape from "$lib/images/background/desert-background.png"
 	// This code below allows for smooth scrolling to ID on click
 	const scrollToElement = (selector: any) => {
 		const element = document.querySelector(selector);
@@ -59,6 +60,11 @@
 <style>
 	header {
 		background-color: var(--secondary-color);
+		background-image: url("$lib/images/background/desert-background.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-attachment:fixed;
 		height: 100%;
 	}
 	.wrapper {
@@ -83,8 +89,12 @@
 		text-align: center;
 	}
 	.large-logo {
-		width: 95%;
+		width: 85%;
 		max-width: 575px;
+		border-radius: 50%;
+		border: 1px solid var(--color-transparent-alternate);
+		background-color: var(--color-transparent);
+		margin: 3rem 0 1rem 0;
 	}
 	.location-card,
 	.phone-card {

@@ -1,7 +1,10 @@
+<script>
+	let copyrightYear = new Date().getFullYear() 
+</script>
 <section class="footer-section">
 	<section>
 		<footer>
-			<p class="copyright">© 2022 Tortoise Tea House</p>
+			<p class="copyright">© {copyrightYear} Tortoise Tea House</p>
 		</footer>
 	</section>
 </section>
