@@ -5,7 +5,6 @@
 	export const prerender = true;
 </script>
 
-
 <section class="contact-component">
 	<section class="contact-wrapper">
 		<h2 id="contact">Let's Connect</h2>

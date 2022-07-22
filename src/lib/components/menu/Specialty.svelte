@@ -1,9 +1,4 @@
-<!-- <script>
-    import Accordion from "../Accordion.svelte";
-</script> -->
-
 <section class=page-wrapper>
-    <!-- <Accordion title="Specialty"> -->
         <div class="menu">
             <!--Menu items Below-->
 
@@ -101,5 +96,4 @@
                 </div>                 
             </div>
         </div>
-    <!-- </Accordion> -->
 </section>

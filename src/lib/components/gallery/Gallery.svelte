@@ -1,7 +1,7 @@
 <script>
 	// import Gallery from 'svelte-image-gallery'
 </script>
-<h2 id="photo-gallery">Photo Gallery</h2>
+<!-- <h2 id="photo-gallery">Photo Gallery</h2> -->
 <div class = "photo-grid">
     <div class="card card3" alt="Tortoise Tea House Combo 3"></div>
     <div class="card card1 card-wide" alt="Tortoise Tea House Combo 1"></div>
@@ -14,9 +14,10 @@
 
 
 <style>
-    h2{
+    /* h2{
+        visibility: hidden;
         text-align: center;
-    }
+    } */
 /* Reference photo grid documentation: https://github.com/fireship-io/224-animated-css-grid */
     .card {
         display: flex;
@@ -42,6 +43,7 @@
         opacity: 1;
     }
     .photo-grid {
+        margin: 2rem 0;
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));

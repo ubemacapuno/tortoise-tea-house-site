@@ -51,7 +51,7 @@
                 <li><a target="_blank" href="https://www.instagram.com/tortoiseteahouse/"><img class="social-icon" src={Instagram} alt="Instagram Logo"></a></li>
                 <li><a class="social-icon" target="_blank" href="https://www.yelp.com/biz/tortoise-tea-house-phoenix"><img class="social-icon"src={Yelp} alt="YelpLogo"></a></li>
             </ul>
-			<div>
+			<div class="copyright-container">
 				<p class="copyright">© {copyrightYear} Tortoise Tea House</p>
 			</div>
         </div>
@@ -137,7 +137,7 @@
     }
     .mobile-socials{
         position: absolute;
-        bottom: 70px;
+        bottom: 1rem;
         left: 0;
         right: 0;
     }
@@ -148,11 +148,11 @@
 		display: flex;
 		justify-content: space-around;
 		margin: 0 auto;
-		padding-bottom: 100px;
+		padding-bottom: 70px;
 	}
 	.copyright{
 		text-align: center;
-		color: var(--tertiary-color);
+		color: var(--pure-white);
 		position: relative;
 		bottom: 25px;
 	}

@@ -59,8 +59,7 @@ table {
 	--primary-color: #006D77;
 	--secondary-color: #F5EAE4;
 	--tertiary-color: #83c5be;
-	--color-transparent: hsla(21, 46%, 93%, 65%);
-	--color-transparent-alternate: rgba(139, 139, 139, 0.9);
+	--color-transparent: rgba(139, 139, 139, 0.9);
 	--background-color: #FBF1E9;
 	--accent-color: #E29578;
 	--secondary-accent-color: #9D8189;
