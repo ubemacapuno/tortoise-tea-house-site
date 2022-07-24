@@ -8,7 +8,7 @@
 <section class="contact-component">
 	<section class="contact-wrapper">
 		<h2 id="contact">Let's Connect</h2>
-		<p>Phone: <a href="tel:+6026122363">(602) 612-2363</p>
+		<p>Phone: <a href="tel:+16026122363">(602) 612-2363</p>
 			<!-- Social Media -->
 			<ul class="icons">
 				<li><a target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img class="social-icon" src={Facebook} alt="Facebook Logo"></a></li>
