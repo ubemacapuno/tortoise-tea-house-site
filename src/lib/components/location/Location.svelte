@@ -33,18 +33,18 @@ h2{
 }
 
 a{
-    color: var(--pure-white);
+    color: var(--link-color);
     font-weight: bold;
     transition: all 0.2s;
     letter-spacing: 1px;
+    margin-bottom: 2rem;
 	}
+a:hover{
+    color: var(--pure-white);
+}
 p{
     text-align: center;
-    margin-bottom: 2rem;
 }
-a:hover{
-		color: var(--text-color);
-	}
 .contact-component{
     background-color: var(--secondary-color);
     background-image: url("$lib/images/background/desert-background2.jpg");
