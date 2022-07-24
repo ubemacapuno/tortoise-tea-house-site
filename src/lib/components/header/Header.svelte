@@ -60,7 +60,7 @@
 	header {
 		background-color: var(--background-color);
 		background-image: url("$lib/images/background/desert-background.jpg");
-		background-position: bottom;
+		background-position: top;
 		background-repeat: no-repeat;
 		background-size:cover;
 		background-attachment:scroll;
