@@ -1,38 +1,25 @@
-# create-svelte
+## tortoise-tea-house-site: <a target="_blank" href="https://tortoiseteahouse.netlify.app/">Live Demo</a>!
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This website is for the Tortoise Tea House shop in Phoenix, AZ.
 
-## Creating a project
+ <tr>
+    <td width="100%"  style="align:center;" valign="top">
+            <img src="https://github.com/ubemacapuno/images-for-github-readme/blob/main/tortoise-tea-house-site.jpg?raw=true" width="100%"  alt="Tortoise Tea House website."/>
+    </td>
+  </tr>
 
-If you're seeing this, you've probably already done this step. Congrats!
+## How It's Made:
 
-```bash
-# create a new project in the current directory
-npm init svelte
+**Tech used:** 
 
-# create a new project in my-app
-npm init svelte my-app
-```
+Svelte/SvelteKit, JavaScript/HTML/CSS
 
-## Developing
+Please be sure to checkout [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), and 
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## `npm -install`
 
-```bash
-npm run dev
+## Optimizations:
+To improve this website, I would like to incorporate lazy-loading on the images in the gallery section. I am capable of lazy-loading img elements, however the images in the gallery section are actually placed in div elements using the CSS "background-image" property and I am not yet knowledgable on how to lazy-load these. It was easier and looked nicer for me to make a responsive grid-layout using "background-image", however if I am unable to effectively lazy-load when the images are in this manner, I might consider making a responsive grid-layout without using the "background-image" property and instead using img elements.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Lessons Learned:
+This is my first project in which I used CSS grid; all previous projects and contributions, I used display: flex. When it comes to dealing with multiple columns, grid makes a lot more sense to use than flex, and I plan to consider using grid more in my future projects.
