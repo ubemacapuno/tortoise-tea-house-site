@@ -29,7 +29,6 @@
     
 h2{
     color: var(--pure-white);
-    margin: 1rem 0 1rem 0;
 }
 
 a{
@@ -37,7 +36,6 @@ a{
     font-weight: bold;
     transition: all 0.2s;
     letter-spacing: 1px;
-    margin-bottom: 2rem;
 	}
 a:hover{
     color: var(--pure-white);
@@ -76,5 +74,12 @@ p{
     height: 100%;
     padding-bottom: 2rem;
 }
+
+@media (min-width: 1700px) {
+    .contact-component{
+    background-attachment:fixed;
+
+		}
+	}
 	
 </style>
