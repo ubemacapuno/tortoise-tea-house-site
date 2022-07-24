@@ -1,4 +1,4 @@
-## tortoise-tea-house-site: <a target="_blank" href="https://tortoiseteahouse.netlify.app/">Live Demo</a>
+## tortoise-tea-house-site (Work in Progress): <a target="_blank" href="https://tortoiseteahouse.netlify.app/">Live Demo</a>
 
 This website is for the Tortoise Tea House shop in Phoenix, AZ.
 
