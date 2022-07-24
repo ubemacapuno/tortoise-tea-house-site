@@ -4,7 +4,7 @@
   * Pathname must be given for canonical URLs 
 -->
 <script>
-	export let title = 'Tortoise Tea House'
+	export let title = 'Tortoise Tea House | Phoenix'
 	export let description = 'Boba tea shop offering hand crafted drinks including milk teas, fruit teas, milkshakes, and more!'
 	export let pathname = ''
 	export let image = ''

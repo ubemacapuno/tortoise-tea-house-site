@@ -40,7 +40,9 @@
 			<a
 				class="card-detail-alternate"
 				title="See us on Google Maps"
-				href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8"
+				href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8"  
+				target="_blank" 
+				rel="noopener noreferrer"
 			>
 				<img src={Location} alt="Tortoise Tea House Phone" aria-hidden="true" />
 				<p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p>
@@ -61,7 +63,7 @@
 		background-position: bottom;
 		background-repeat: no-repeat;
 		background-size:cover;
-		background-attachment:fixed;
+		background-attachment:scroll;
 		height: 100%;
 	}
 	.wrapper {
@@ -171,8 +173,7 @@
 	}
 	@media (max-width: 450px) {
 		header {
-		background-size: 1000px 648px;
-		background-attachment:scroll;
+		/* background-size: 1000px 648px; */
 		}
 		.header-top {
 			display: none;
