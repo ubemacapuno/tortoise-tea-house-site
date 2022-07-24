@@ -1,7 +1,7 @@
 /*         */
 /* CSS RESET */
 /*         */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 html {font-size: 100%;} /*16px*/
 
 html, body, div, span, applet, object, iframe,
@@ -53,7 +53,7 @@ table {
 /*         */
 
 :root {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
 	--primary-color: #006D77;

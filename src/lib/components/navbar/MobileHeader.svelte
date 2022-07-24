@@ -72,10 +72,9 @@
 	}
 
 	.header {
-		background-color: #FBF1E9;
+		background-color: var(--background-color);
 		display: flex;
 		justify-content: flex-end;
-		outline: 1px solid #FBF1E9;
 	}
 
 	.menu-icon {

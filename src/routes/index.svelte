@@ -47,6 +47,9 @@
 	#about, .index-right p {
 		color: var(--pure-white);
 	}
+	p {
+		line-height: 1.6rem;
+	}
 	.about-us{
 		min-height: 60vh;
 		background-color: var(--primary-color);

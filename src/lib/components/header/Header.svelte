@@ -58,7 +58,7 @@
 
 <style>
 	header {
-		background-color: #FBF1E9;
+		background-color: var(--background-color);
 		background-image: url("$lib/images/background/desert-background.jpg");
 		background-position: bottom;
 		background-repeat: no-repeat;
@@ -97,7 +97,7 @@
 	}
 	.location-card,
 	.phone-card {
-		color: white;
+		color: var(--pure-white);
 		width: 215px;
 	}
 	.card-detail {
@@ -106,7 +106,7 @@
 		width: 250px;
 		padding: 1rem;
 		margin: 10px;
-		background-color: white;
+		background-color: var(--pure-white);
 		transition: all 0.2s;
 	}
 	.cards {
@@ -172,9 +172,6 @@
 		}
 	}
 	@media (max-width: 450px) {
-		header {
-		/* background-size: 1000px 648px; */
-		}
 		.header-top {
 			display: none;
 		}
