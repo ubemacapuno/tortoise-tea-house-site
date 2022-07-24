@@ -24,7 +24,7 @@
 	<section class="index-body">
 		<img src={Wall} class="about-img index-left" alt="Test">
 		<section class="index-right">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto ipsa minima, corrupti eaque, dicta voluptatibus aperiam quibusdam, sequi eos sed corporis id incidunt. Ut sint in doloribus quod minima!</p>
+			<p>Boba tea shop offering hand crafted drinks including milk teas, fruit teas, milkshakes, and more!</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos aliquam dolores quaerat itaque quasi sunt? Sunt odio nulla omnis nostrum incidunt quo consequuntur ea voluptatem possimus, laudantium vitae minus.</p>
 		</section>
