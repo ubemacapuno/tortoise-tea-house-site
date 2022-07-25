@@ -5,9 +5,8 @@
     import Test3 from '$lib/images/menu/test3.jpg'
 </script>
 
-<section class=page-wrapper>
+<section class=page-wrapper-menu>
         <div class="menu">
-            
             <h3 class="menu-group-heading">
                 Coffee
             </h3>
@@ -16,7 +15,7 @@
                 <!--Menu items Below-->
 
                 <div class="menu-item">
-                    <!-- <img class="menu-item-image" src="" alt="Iced Caffe Americano"> -->
+                    <img class="menu-item-image" src="" alt="Iced Caffe Americano">
                     <div class="comp-container">
                         <ImageLoader src={Test3} alt="Our image"></ImageLoader>
                     </div>
@@ -61,8 +60,7 @@
                             <span class="menu-item-price">4.00</span>
                         </h5>
                     </div>
-                </div>                  
-                            
+                </div>                     
             </div>
         </div>
 </section>

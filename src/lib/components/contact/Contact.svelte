@@ -8,7 +8,6 @@
 <section class="contact-component">
 	<section class="contact-wrapper">
 		<h2 id="contact">Let's Connect</h2>
-		<p>Phone: <a href="tel:+16026122363">(602) 612-2363</p>
 			<!-- Social Media -->
 			<ul class="icons">
 				<li><a target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img class="social-icon" src={Facebook} alt="Facebook Logo"></a></li>
@@ -57,6 +56,7 @@
 	}
 	.contact-component {
 		background-image: linear-gradient(to right top,var(--primary-color),var(--tertiary-color),var(--secondary-color));
+		padding: 100px 0;
 	}
 
 	.contact-wrapper {
@@ -115,6 +115,10 @@
 	.field input, .field, .field textarea {
 		width: 100%;
 	}
+	.field input {
+		padding: 0.8rem 1rem;
+		margin-bottom: 1.5rem;
+	}
 	textarea {
 		resize: none;
 		min-height: 100px;
@@ -127,11 +131,11 @@
 		color: var(--pure-white);
 		border: 2px solid var(--secondary-color);
 		border-radius: 10%;
-		padding: 10px;
+		padding: 1rem;
 		background-color: var(--primary-color);
 		transition: all 0.2s;
 		cursor: pointer;
-		margin: 5px 0 16px 0;
+		margin: 1.5rem 0;
 		transition: 0.2s;
 		letter-spacing: 0.1rem;
 	}
@@ -141,7 +145,7 @@
 		border: 2px solid var(--primary-color);
 	}
 	.contact-card{
-		width: 90%;
+		width: 95%;
 		display: flex;
 		align-items: center;
 		justify-content: center;

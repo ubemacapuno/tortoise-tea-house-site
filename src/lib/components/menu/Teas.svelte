@@ -1,4 +1,4 @@
-<section class=page-wrapper>
+<section class=page-wrapper-menu>
         <div class="menu">
 
             <h3 class="menu-group-heading">
@@ -11,8 +11,8 @@
                 <div class="menu-item">
                     <div class="menu-item-text">
                         <h5 class="menu-item-heading">
-                            <p class="menu-item-name">White Peach Oolong</p>
-                            <p class="menu-item-price">4.00</p>
+                            <span class="menu-item-name">White Peach Oolong</span>
+                            <span  class="menu-item-price">4.00</span>
                         </h5>
                     </div>
                 </div>   
@@ -20,8 +20,8 @@
                 <div class="menu-item">
                     <div class="menu-item-text">
                         <h5 class="menu-item-heading">
-                            <p class="menu-item-name">Roasted Oolong</p>
-                            <p class="menu-item-price">4.00</p>
+                            <span  class="menu-item-name">Roasted Oolong</span>
+                            <span  class="menu-item-price">4.00</span>
                         </h5>
                     </div>
                 </div>   
@@ -29,8 +29,8 @@
                 <div class="menu-item">
                     <div class="menu-item-text">
                         <h5 class="menu-item-heading">
-                            <p class="menu-item-name">Green Tea</p>
-                            <p class="menu-item-price">4.00</p>
+                            <span  class="menu-item-name">Green Tea</span>
+                            <span  class="menu-item-price">4.00</span>
                         </h5>
                     </div>
                 </div>   
@@ -38,8 +38,8 @@
                 <div class="menu-item">
                     <div class="menu-item-text">
                         <h5 class="menu-item-heading">
-                            <p class="menu-item-name">Jasmine Tea</p>
-                            <p class="menu-item-price">4.00</p>
+                            <span  class="menu-item-name">Jasmine Tea</span>
+                            <span  class="menu-item-price">4.00</span>
                         </h5>
                     </div>
                 </div>   

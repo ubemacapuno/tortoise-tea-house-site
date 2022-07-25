@@ -12,10 +12,6 @@
 </script>
 
 <Seo pathname="/" />
-<svelte:head>
-	<title>Tortoise Tea House</title>
-	<meta name="Tortoise Tea House Main Page" content="Svelte demo app" />
-</svelte:head>
 
 <section class="about-us">
 	<section class="index-header">
@@ -30,18 +26,19 @@
 		</section>
 	</section>
 </section>
-<div class="page-wrapper">
+<div class="page-wrapper-menu">
 	<Gallery />
 	<section class="index-header">
 		<h2 id="menu">Menu</h2>
 	</section>
+</div>
 	<Specialty />
 	<MilkTea />
 	<FruitTea />
 	<Toppings />
 	<Coffee />
 	<Teas />
-</div>
+
 
 <style>
 	#about, .index-right p {
@@ -57,11 +54,12 @@
 		background-repeat: no-repeat;
 		background-size: auto;
 		background-attachment:fixed;
+		padding: 100px 0;
 	}
 	.about-img {
 			margin: 1rem;
 			width: 440px;
-			max-width: 80%;
+			max-width: 90%;
 			border-radius: 3%;
 		}
 	h2{
@@ -78,7 +76,6 @@
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
-		max-width: 440px;
 	}
 
 	.index-left {
@@ -92,10 +89,10 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		padding: 1rem;
 		width: 100%;
-		max-width: 1024px;
+		max-width: 1800px;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}

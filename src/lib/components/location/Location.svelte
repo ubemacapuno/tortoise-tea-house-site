@@ -1,18 +1,14 @@
 <script context="module">
 	export const prerender = true;
 </script>
-<div class="contact-component">
+<div class="location-component">
     <div class="opaque">
         <section class="page-wrapper">
                 <!-- Location -->
                 <div class="location-header">
-                    <h2 id="location">Location</h2>
-                    <a
-                    title="See us on Google Maps"
-                    href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8"  
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                ><p class="location-card">2418 E Greenway Rd Phoenix, AZ 85032</p></a>
+                    <h2 id="location">Phone & Location</h2>
+                    <p class="phone">Phone:  <a title="Call us at 1-602-612-2363" href="tel:+16026122363">(602) 612-2363</a></p>
+                    <p class="address">Address:  <a title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8" target="_blank" rel="noopener noreferrer"> 2418 E Greenway Rd Phoenix, AZ 85032</a></p>
                 </div>
 
                 <div class ="map-responsive"> 
@@ -23,12 +19,19 @@
 </div>
 
 <style>
+.page-wrapper{
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
 .opaque{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 100px 0;
 }
     
-h2{
+h2, p{
     color: var(--pure-white);
+    text-align: center;
 }
 
 a{
@@ -43,7 +46,11 @@ a:hover{
 p{
     text-align: center;
 }
-.contact-component{
+.phone, .address {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.location-component{
     background-color: var(--secondary-color);
     background-image: url("$lib/images/background/desert-background2.jpg");
     background-position: bottom;
@@ -51,6 +58,7 @@ p{
     background-size:cover;
     background-attachment:scroll;
     height: 100%;
+    
 	
 }
 
@@ -61,7 +69,6 @@ p{
 }
 .map-responsive {
     width: 100%;
-    max-width: 600px;
     height: 0;
     padding-bottom: 56.25%;
     position: relative;
@@ -76,7 +83,7 @@ p{
 }
 
 @media (min-width: 1700px) {
-    .contact-component{
+    .location-component{
     background-attachment:fixed;
 
 		}

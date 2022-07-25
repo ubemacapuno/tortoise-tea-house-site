@@ -1,23 +1,28 @@
 <script>
 	// import Gallery from 'svelte-image-gallery'
 </script>
-
-<div class="photo-grid">
-    <div class="card card3" alt="Tortoise Tea House Combo 3"></div>
-    <div class="card card1 card-wide" alt="Tortoise Tea House Combo 1"></div>
-    <div class="card card4" alt="House Milk Tea with Boba"></div>
-    <div class="card card6" alt="Mangonada"></div>
-    <div class="card card5" alt="Mashed Taro with Jasmine Milk Tea"></div>
-    <div class="card card2 card-wide" alt="Tortoise Tea House Combo 2"></div>
-    <div class="card card7" alt="Super Passion Fruit"></div>
+<div class="gallery-component">
+    <h2>Gallery</h2>
+    <div class="photo-grid">
+        <div class="card card3" alt="Tortoise Tea House Combo 3"></div>
+        <div class="card card1 card-wide" alt="Tortoise Tea House Combo 1"></div>
+        <div class="card card4" alt="House Milk Tea with Boba"></div>
+        <div class="card card6" alt="Mangonada"></div>
+        <div class="card card5" alt="Mashed Taro with Jasmine Milk Tea"></div>
+        <div class="card card2 card-wide" alt="Tortoise Tea House Combo 2"></div>
+        <div class="card card7" alt="Super Passion Fruit"></div>
+    </div>
 </div>
 
 
 <style>
-    /* h2{
-        visibility: hidden;
+    .gallery-component{
+        padding: 100px 0;
+    }
+    h2{
         text-align: center;
-    } */
+        margin-top: 0;
+    }
 /* Reference photo grid documentation: https://github.com/fireship-io/224-animated-css-grid */
     .card {
         display: flex;

@@ -6,13 +6,13 @@
 <script>
 	export let title = 'Tortoise Tea House | Phoenix'
 	export let description = 'Boba tea shop offering hand crafted drinks including milk teas, fruit teas, milkshakes, and more!'
-	export let pathname = ''
-	export let image = ''
+	export let pathname = '/'
+	export let image = '/_app/immutable/assets/gallery-combo-3-3a45d29d.jpg'
 	export let robots = 'index, follow'
 
-	let siteUrl = 'https://tortoiseteahouse.netlify.app/'
-	let siteName = 'Tortoise Tea House'
-	let siteTitle = `${title} | ${siteName}`
+	let siteUrl = 'https://tortoiseteahouse.netlify.app'
+
+	let siteTitle = `${title}`
 </script>
 
 <svelte:head>

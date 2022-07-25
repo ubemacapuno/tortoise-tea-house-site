@@ -1,4 +1,4 @@
-<section class=page-wrapper>
+<section class=page-wrapper-menu>
         <div class="menu">
             <!--Menu items Below-->
 
