@@ -7,6 +7,7 @@
                 <!-- Location -->
                 <div class="location-header">
                     <h2 id="location">Phone & Location</h2>
+                    <p>Open Wednesday to Monday <br /> 12pm - 8pm</p>
                     <p class="phone">Phone:  <a title="Call us at 1-602-612-2363" href="tel:+16026122363">(602) 612-2363</a></p>
                     <p class="address">Address:  <a title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8" target="_blank" rel="noopener noreferrer"> 2418 E Greenway Rd Phoenix, AZ 85032</a></p>
                 </div>
@@ -25,13 +26,17 @@
     max-width: 1200px;
 }
 .opaque{
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 100px 0;
 }
     
 h2, p{
     color: var(--pure-white);
     text-align: center;
+}
+
+h2 {
+    padding-bottom: 3rem;
 }
 
 a{
@@ -41,7 +46,7 @@ a{
     letter-spacing: 1px;
 	}
 a:hover{
-    color: var(--pure-white);
+    color: var(--hover-color);
 }
 p{
     text-align: center;
@@ -49,6 +54,10 @@ p{
 .phone, .address {
     margin-bottom: 2rem;
     margin-top: 1rem;
+}
+
+.address {
+    padding-bottom: 3rem;
 }
 .location-component{
     background-color: var(--secondary-color);

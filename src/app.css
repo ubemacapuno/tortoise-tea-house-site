@@ -58,6 +58,7 @@ table {
 	--primary-color: #006D77;
 	--secondary-color: #F5EAE4;
 	--tertiary-color: #83c5be;
+	--hover-color: #A2E191;
 	--color-transparent: rgba(139, 139, 139, 0.9);
 	--background-color: #FBF1E9;
 	--accent-color: #E29578;
@@ -170,7 +171,7 @@ small, .text_small {font-size: 0.8rem;}
 	transition: all .2s;
 	}
 .social-icon:hover{
-	transform: scale(1.1) rotate(10deg);
+	transform: scale(1.2) rotate(10deg);
 	}
 /*              */
 /* Menu Styling */
@@ -250,6 +251,12 @@ small, .text_small {font-size: 0.8rem;}
 	}
 }
 
+@media screen and (min-width: 1200px) {
+
+	.menu-group {
+		grid-template-columns: repeat(3, 1fr); /* use grid for 2 evenly sized columns for desktop */
+	}
+}
 /*                     */
 /* End of Menu Styling */
 /*                     */

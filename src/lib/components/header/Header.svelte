@@ -161,7 +161,7 @@
 	}
 	a:hover,
 	img:hover {
-		color: var(--tertiary-color);
+		color: var(--hover-color);
 	}
 	@media (max-width: 950px) {
 		.header-top{
