@@ -5,6 +5,7 @@
 	import Instagram from '$lib/images/socials/socials-instagram.svg'
 	import Yelp from '$lib/images/socials/socials-yelp.svg'
 	import PhoneCircle from '$lib/images/icons/phone-circle.svg'
+	import PhoneCircleAlternate from '$lib/images/icons/phone-circle-darker.svg'
 	export let isMenuOpen = false;
 	const closeMenu = () => (isMenuOpen = false);
 
@@ -24,7 +25,7 @@
 </script>
 <div class="header">
 		<button class="menu-icon corner-icon phone-main">
-			<a title="Call us at 1-602-612-2363" href="tel:+16026122363"><img class="social-icon" src={PhoneCircle} alt="Facebook Logo"></a>
+			<a title="Call us at 1-602-612-2363" href="tel:+16026122363"><img class="social-icon" src={PhoneCircleAlternate} alt="Phone"></a>
 		</button>
 		<button class="menu-icon corner-icon hamburger" on:click={() => (isMenuOpen = !isMenuOpen)}>
 			<Icon name="hamburger" color=var(--primary-color) />
@@ -34,7 +35,7 @@
 	<div class="mobile-menu">
 		<div class="hamburger-menu">
 			<button class="menu-icon corner-icon phone-mobile">
-				<a title="Call us at 1-602-612-2363" href="tel:+16026122363"><img class="social-icon" src={PhoneCircle} alt="Facebook Logo"></a>
+				<a title="Call us at 1-602-612-2363" href="tel:+16026122363"><img class="social-icon" src={PhoneCircle} alt="Phonne"></a>
 			</button>
 			<button class="menu-icon close" on:click={closeMenu}>
 				<Icon name="close" color=var(--pure-white) />

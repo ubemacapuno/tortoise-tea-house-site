@@ -7,6 +7,7 @@
 	import MilkTea from '$lib/components/menu/MilkTea.svelte';
 	import Coffee from '$lib/components/menu/Coffee.svelte';
 	import Gallery from '$lib/components/gallery/Gallery.svelte';
+	import Lazyloadgallery from '$lib/components/gallery/Lazyloadgallery.svelte';
 	import Wall from '$lib/images/gallery/gallery-wall.jpg'
 	import Seo from '$lib/components/Seo.svelte'
 </script>
@@ -27,7 +28,8 @@
 	</section>
 </section>
 <div class="page-wrapper-menu">
-	<Gallery />
+	<!-- <Gallery /> -->
+	<Lazyloadgallery />
 	<section class="index-header">
 		<h2 id="menu">Menu</h2>
 	</section>
@@ -106,6 +108,10 @@
 		.index-right {
 			padding: 0;
 			margin: 0;
+		}
+
+		.about-img {
+			margin-bottom: 3rem;
 		}
 }
 
