@@ -140,9 +140,9 @@
 		letter-spacing: 0.1rem;
 	}
 	button:hover {
-    	background-color: var(--pure-white);
-		color: var(--primary-color);
+    	background-color: var(--secondary-color);
 		border: 2px solid var(--primary-color);
+		color: var(--primary-color);
 	}
 	.contact-card{
 		width: 95%;

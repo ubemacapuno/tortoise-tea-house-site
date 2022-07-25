@@ -4,6 +4,7 @@
     import Facebook from '$lib/images/socials/socials-facebook.svg'
 	import Instagram from '$lib/images/socials/socials-instagram.svg'
 	import Yelp from '$lib/images/socials/socials-yelp.svg'
+	import PhoneCircle from '$lib/images/icons/phone-circle.svg'
 	export let isMenuOpen = false;
 	const closeMenu = () => (isMenuOpen = false);
 
@@ -22,15 +23,19 @@
 	// End code for smooth scrolling to ID on click
 </script>
 <div class="header">
-	<div class="hamburger-menu">
-		<button class="menu-icon" on:click={() => (isMenuOpen = !isMenuOpen)}>
+		<button class="menu-icon corner-icon phone-main" on:click={() => (isMenuOpen = !isMenuOpen)}>
+			<a target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img class="social-icon" src={PhoneCircle} alt="Facebook Logo"></a>
+		</button>
+		<button class="menu-icon corner-icon hamburger" on:click={() => (isMenuOpen = !isMenuOpen)}>
 			<Icon name="hamburger" color=var(--primary-color) />
 		</button>
-	</div>
 </div>
 <aside class="mobile-menu-wrapper" class:isMenuOpen>
 	<div class="mobile-menu">
 		<div class="hamburger-menu">
+			<button class="menu-icon corner-icon phone-mobile" on:click={() => (isMenuOpen = !isMenuOpen)}>
+				<a target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img class="social-icon" src={PhoneCircle} alt="Facebook Logo"></a>
+			</button>
 			<button class="menu-icon close" on:click={closeMenu}>
 				<Icon name="close" color=var(--pure-white) />
 			</button>
@@ -68,13 +73,13 @@
 	}
 	.hamburger-menu{
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
 	}
 
 	.header {
 		background-color: var(--background-color);
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
 	}
 
 	.menu-icon {
@@ -86,6 +91,13 @@
 		margin: 0 auto;
 	}
 
+	.corner-icon {
+		margin: 0;
+	}
+	.hamburger {
+		margin: 0;
+		padding-top: 0;
+	}
 	.mobile-menu-wrapper {
 		position: fixed;
 		top: 0;
@@ -106,6 +118,7 @@
 	.close {
 		margin: 0;
 		padding: 1rem 1rem 0 0;
+		height: 3rem;
 	}
 	.mobile-menu {
 		padding: var(--gap-largest);
