@@ -26,7 +26,7 @@
 				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#about')}>About</a></li>
 				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#menu')}>Menu</a></li>
 				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#contact')}>Contact</a></li>
-				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#location')}>Location</a></li>
+				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#location')}>Phone & Location</a></li>
 			</ul>
 		</nav>
 	</div>

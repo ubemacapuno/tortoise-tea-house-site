@@ -1,8 +1,7 @@
 /*         */
 /* CSS RESET */
 /*         */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-html {font-size: 100%;} /*16px*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /*16px*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,7 +62,7 @@ table {
 	--background-color: #FBF1E9;
 	--accent-color: #E29578;
 	--secondary-accent-color: #9D8189;
-	--link-color: #affff7;
+	--link-color: #d8fffb;
 	--heading-color: rgba(0, 0, 0, 0.7);
 	--text-color: #444444;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
@@ -110,8 +109,9 @@ h1 {
 
 h2 {
 	font-size: 2.441rem;
-	/* font-weight: bold;
-	letter-spacing: 1.5px; */
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-top: 0;
 }
 
 h3 {font-size: 1.953rem;}
@@ -157,7 +157,13 @@ small, .text_small {font-size: 0.8rem;}
 .page-wrapper {
 	padding: 0 10px;
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1800px;
+}
+
+.page-wrapper-menu {
+	padding: 0 10px;
+	margin: 0 auto;
+	max-width: 1800px;
 }
 
 .social-icon{
@@ -172,6 +178,13 @@ small, .text_small {font-size: 0.8rem;}
 
 .menu {
 	font-size: 14px;
+	padding-bottom: 100px;
+}
+
+.menu h3{
+	font-size: 1.7rem;
+	padding: 0;
+	font-weight: bold;
 }
 
 .menu-group-heading {
@@ -215,7 +228,6 @@ small, .text_small {font-size: 0.8rem;}
 
 .menu-item-name {
 	margin-right: 1.5em;
-	font-weight: bold;
 }
 
 .menu-item-description {
@@ -229,6 +241,7 @@ small, .text_small {font-size: 0.8rem;}
 
 	.menu-group {
 		grid-template-columns: repeat(2, 1fr); /* use grid for 2 evenly sized columns for desktop */
+		column-gap: 14rem;
 	}
 
 	.menu-item-image {

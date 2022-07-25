@@ -1,4 +1,4 @@
-<section class=page-wrapper>
+<section class=page-wrapper-menu>
         <div class="menu">
 
             <h3 class="menu-group-heading">
