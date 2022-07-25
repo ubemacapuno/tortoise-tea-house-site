@@ -58,6 +58,7 @@ p{
 
 .address {
     padding-bottom: 3rem;
+    margin-top: 0;
 }
 .location-component{
     background-color: var(--secondary-color);

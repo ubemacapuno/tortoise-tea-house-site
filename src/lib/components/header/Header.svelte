@@ -175,5 +175,8 @@
 		.header-top {
 			display: none;
 		}
+		.large-logo{
+			margin-top: 0.5rem;
+		}
 	}
 </style>

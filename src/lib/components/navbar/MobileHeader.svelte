@@ -23,8 +23,8 @@
 	// End code for smooth scrolling to ID on click
 </script>
 <div class="header">
-		<button class="menu-icon corner-icon phone-main" on:click={() => (isMenuOpen = !isMenuOpen)}>
-			<a target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img class="social-icon" src={PhoneCircle} alt="Facebook Logo"></a>
+		<button class="menu-icon corner-icon phone-main">
+			<a title="Call us at 1-602-612-2363" href="tel:+16026122363"><img class="social-icon" src={PhoneCircle} alt="Facebook Logo"></a>
 		</button>
 		<button class="menu-icon corner-icon hamburger" on:click={() => (isMenuOpen = !isMenuOpen)}>
 			<Icon name="hamburger" color=var(--primary-color) />
@@ -33,8 +33,8 @@
 <aside class="mobile-menu-wrapper" class:isMenuOpen>
 	<div class="mobile-menu">
 		<div class="hamburger-menu">
-			<button class="menu-icon corner-icon phone-mobile" on:click={() => (isMenuOpen = !isMenuOpen)}>
-				<a target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img class="social-icon" src={PhoneCircle} alt="Facebook Logo"></a>
+			<button class="menu-icon corner-icon phone-mobile">
+				<a title="Call us at 1-602-612-2363" href="tel:+16026122363"><img class="social-icon" src={PhoneCircle} alt="Facebook Logo"></a>
 			</button>
 			<button class="menu-icon close" on:click={closeMenu}>
 				<Icon name="close" color=var(--pure-white) />
