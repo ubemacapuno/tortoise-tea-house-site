@@ -11,6 +11,8 @@
         <div class="card card5" alt="Mashed Taro with Jasmine Milk Tea"></div>
         <div class="card card2 card-wide" alt="Tortoise Tea House Combo 2"></div>
         <div class="card card7" alt="Super Passion Fruit"></div>
+        <div class="card card8" alt="Caramel Macchiato With Extra Caramel"></div>
+        <div class="card card9" alt="Mocha Latte With Whipped Cream"></div>
     </div>
 </div>
 
@@ -77,6 +79,14 @@
     .card7{
             background-image: url("../../images/gallery/gallery-super-passion-fruit.jpg");
             background-position: 0 12%;
+    }
+    .card8{
+            background-image: url("../../images/gallery/gallery-mocha-latte.jpg");
+            /* background-position: 0 12%; */
+    }
+    .card9{
+            background-image: url("../../images/gallery/gallery-caramel-macchiato.jpg");
+            /* background-position: 0 12%; */
     }
 
 @media screen and (min-width: 600px) {

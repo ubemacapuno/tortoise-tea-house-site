@@ -115,7 +115,7 @@
 	.field input, .field, .field textarea {
 		width: 100%;
 	}
-	.field input {
+	.field input, .field textarea {
 		padding: 0.8rem 1rem;
 		margin-bottom: 1.5rem;
 	}

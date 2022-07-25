@@ -26,18 +26,24 @@
   
   <style>
     img {
-      width: 80px;
-      height: 80px;
-      /* outline: solid var(--primary-color); */
-      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      margin-right: 1.5em;
+      flex-shrink: 0;
       opacity: 0;
       transition: opacity 1200ms ease-out;
     }
     img.loaded {
       opacity: 1;
     }
+
+    @media (max-width: 475px) {
+    img{
+      border-radius: 4px;
+      
+    }
+
+   }
   </style>
   
   <img {src} {alt} class:loaded bind:this={thisImage} loading="lazy" />
