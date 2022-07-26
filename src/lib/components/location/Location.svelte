@@ -44,7 +44,9 @@ h2, span{
 }
 
 h2 {
+    font-size: 2.2rem;
     padding-bottom: 3rem;
+    font-weight: bold;
 }
 a,span {
     margin: 0 auto;
