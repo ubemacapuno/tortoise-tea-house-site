@@ -221,6 +221,10 @@ small, .text_small {font-size: 0.8rem;}
 	flex-grow: 1;
 }
 
+.menu-item-price {
+	font-weight: bold;
+}
+
 .menu-item-heading {
 	display: flex;
 	justify-content: space-between;

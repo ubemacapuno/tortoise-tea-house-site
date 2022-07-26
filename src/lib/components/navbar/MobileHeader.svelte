@@ -4,8 +4,6 @@
     import Facebook from '$lib/images/socials/socials-facebook.svg'
 	import Instagram from '$lib/images/socials/socials-instagram.svg'
 	import Yelp from '$lib/images/socials/socials-yelp.svg'
-	import PhoneCircle from '$lib/images/icons/phone-circle.svg'
-	import PhoneCircleAlternate from '$lib/images/icons/phone-circle-darker.svg'
 	export let isMenuOpen = false;
 	const closeMenu = () => (isMenuOpen = false);
 
@@ -24,9 +22,6 @@
 	// End code for smooth scrolling to ID on click
 </script>
 <div class="header">
-		<button class="menu-icon corner-icon phone-main">
-			<a title="Call us at 1-602-612-2363" href="tel:+16026122363"><img class="social-icon" src={PhoneCircleAlternate} alt="Phone"></a>
-		</button>
 		<button class="menu-icon corner-icon hamburger" on:click={() => (isMenuOpen = !isMenuOpen)}>
 			<Icon name="hamburger" color=var(--primary-color) />
 		</button>
@@ -34,9 +29,6 @@
 <aside class="mobile-menu-wrapper" class:isMenuOpen>
 	<div class="mobile-menu">
 		<div class="hamburger-menu">
-			<button class="menu-icon corner-icon phone-mobile">
-				<a title="Call us at 1-602-612-2363" href="tel:+16026122363"><img class="social-icon" src={PhoneCircle} alt="Phonne"></a>
-			</button>
 			<button class="menu-icon close" on:click={closeMenu}>
 				<Icon name="close" color=var(--pure-white) />
 			</button>
@@ -74,13 +66,13 @@
 	}
 	.hamburger-menu{
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 	}
 
 	.header {
 		background-color: var(--background-color);
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 	}
 
 	.menu-icon {
@@ -94,10 +86,6 @@
 
 	.corner-icon {
 		margin: 0;
-	}
-	.hamburger {
-		margin: 0;
-		padding-top: 0;
 	}
 	.mobile-menu-wrapper {
 		position: fixed;
@@ -119,7 +107,6 @@
 	.close {
 		margin: 0;
 		padding: 1rem 1rem 0 0;
-		height: 3rem;
 	}
 	.mobile-menu {
 		padding: var(--gap-largest);

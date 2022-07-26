@@ -23,10 +23,10 @@
 		<nav>
 			<ul>
 				<!-- The following anchors below will use smooth scrolling to get to their respective element IDs -->
-				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#about')}>About</a></li>
-				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#menu')}>Menu</a></li>
-				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#contact')}>Contact</a></li>
-				<li><a class="nav-link" href={'#'} on:click|preventDefault={() => scrollToElement('#location')}>Phone & Location</a></li>
+				<li><a class="nav-link" href='#about'on:click|preventDefault={() => scrollToElement('#about')}>About</a></li>
+				<li><a class="nav-link" href='#menu' on:click|preventDefault={() => scrollToElement('#menu')}>Menu</a></li>
+				<li><a class="nav-link" href='#contact' on:click|preventDefault={() => scrollToElement('#contact')}>Contact</a></li>
+				<li><a class="nav-link" href='#location' on:click|preventDefault={() => scrollToElement('#location')}>Phone & Location</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -178,5 +178,9 @@
 		.large-logo{
 			margin-top: 0.5rem;
 		}
+		.wrapper {
+		padding-bottom: 170px;
+	}
+		
 	}
 </style>

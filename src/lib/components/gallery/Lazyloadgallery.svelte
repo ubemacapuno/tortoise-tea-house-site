@@ -1,7 +1,6 @@
 <script>
 import ImageLoader from '$lib/components/image/ImageLoader.svelte';
 import Caramel from '$lib/images/gallery/gallery-caramel-macchiato.jpg'
-import Combo1 from '$lib/images/gallery/gallery-combo-1.jpg'
 import Combo2 from '$lib/images/gallery/gallery-combo-2.jpg'
 import Combo3 from '$lib/images/gallery/gallery-combo-3.jpg'
 import HouseMilk from '$lib/images/gallery/gallery-house-milk-tea-with-boba.jpg'
@@ -65,9 +64,9 @@ import Passionfruit from '$lib/images/gallery/gallery-super-passion-fruit.jpg'
 
 @media screen and (min-width: 600px) {
     /* use card-tall and card-wide accordingly with taller/wider images: */
-  .card-tall {
+  /* .card-tall {
     grid-row: span 2 / auto;
-  }
+  } */
   .card-wide {
     grid-column: span 2 / auto;
   }
@@ -77,13 +76,7 @@ import Passionfruit from '$lib/images/gallery/gallery-super-passion-fruit.jpg'
     .photo-grid {
         display:flex;
         flex-direction: column;
-        gap: 0.2rem;
-    }
-    .card {
-        box-shadow: none;
-        border-radius: 0;
-        background-color: var(--secondary-color);
-
+        gap: 0.5rem;
     }
    }
 </style>
