@@ -1,7 +1,8 @@
 /*         */
 /* CSS RESET */
 /*         */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /*16px*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -192,6 +193,8 @@ small, .text_small {font-size: 0.8rem;}
 	margin: 0;
 	padding-bottom: 1em;
 	border-bottom: 2px solid #ccc;
+	font-family: 'Pacifico', sans-serif;
+	letter-spacing: 2px;
 }
 
 .menu-group {
