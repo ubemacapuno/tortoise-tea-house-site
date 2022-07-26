@@ -68,12 +68,6 @@
 		margin: 0 auto;
 	}
 	
-	.contact-component section {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
 	h2, h4, p {
 		text-align: center;
 	}
