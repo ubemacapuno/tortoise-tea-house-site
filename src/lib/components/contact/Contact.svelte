@@ -5,9 +5,9 @@
 	export const prerender = true;
 </script>
 
-<section class="contact-component">
+<section id="contact" class="contact-component">
 	<div class="contact-wrapper">
-		<h2 id="contact">Let's Connect</h2>
+		<h2>Let's Connect</h2>
 			<!-- Social Media -->
 			<ul class="icons">
 				<li><a target="_blank" href="https://www.facebook.com/tortoiseteahouse"><img class="social-icon" src={Facebook} alt="Facebook Logo"></a></li>

@@ -8,7 +8,7 @@
 	import Coffee from '$lib/components/menu/Coffee.svelte';
 	import Gallery from '$lib/components/gallery/Gallery.svelte';
 	import Lazyloadgallery from '$lib/components/gallery/Lazyloadgallery.svelte';
-	import Eric from '$lib/components/gallery/LazyLoadPlaceholder.svelte'
+	import LazyLoadPlaceholder from '$lib/components/gallery/LazyLoadPlaceholder.svelte'
 	import Wall from '$lib/images/gallery/gallery-wall.jpg'
 	import Seo from '$lib/components/Seo.svelte'
 </script>
@@ -28,23 +28,28 @@
 		</div>
 	</div>
 </section>
-<div class="page-wrapper-menu">
-	<!-- <Gallery /> -->
-	<Eric />
-	<!-- <Lazyloadgallery /> -->
+<div class="page-wrapper">
+	<div class="page-wrapper-gallery">
+		<!-- <Gallery /> -->
+		<LazyLoadPlaceholder />
+		<!-- <Lazyloadgallery /> -->
+	</div>
 	<section id="menu" class="index-header">
 		<h2>Menu</h2>
 	</section>
-</div>
 	<Specialty />
 	<MilkTea />
 	<FruitTea />
 	<Toppings />
 	<Coffee />
 	<Teas />
+</div>
 
 
 <style>
+	.page-wrapper-gallery {
+		max-width: 900px;
+	}
 	#about, .index-right p {
 		color: var(--pure-white);
 	}
