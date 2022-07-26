@@ -5,13 +5,13 @@
     <div class="opaque">
         <div class="page-wrapper">
             <div class="phone-location-details-wrapper">
-                <div class="location-header">
+                <div class="location-details">
                     <h2>Phone & Location</h2>
                     <span>Open Wednesday to Monday</span>
                     <span class="hours">12pm - 8pm</span>
-                    <span class="phone">Phone:</span>
+                    <span class="phone">Phone</span>
                     <a title="Call us at 1-602-612-2363" href="tel:+16026122363">(602) 612-2363</a>
-                    <span class="address">Address:</span> <a title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8" target="_blank" rel="noopener noreferrer"> 2418 E Greenway Rd Phoenix, AZ 85032</a>
+                    <span class="address">Address</span> <a title="See us on Google Maps" href="https://goo.gl/maps/V7PwfwcMZjwaKAuP8" target="_blank" rel="noopener noreferrer"> 2418 E Greenway Rd Phoenix, AZ 85032</a>
                 </div>
             </div>
             <div class ="map-responsive"> 
@@ -80,7 +80,7 @@ iframe{
     height: 100%;	
 }
 
-.location-header {
+.location-details {
     display: flex;
     flex-direction: column;
     align-items: center;

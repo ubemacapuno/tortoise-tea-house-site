@@ -162,12 +162,6 @@ small, .text_small {font-size: 0.8rem;}
 	max-width: 1800px;
 }
 
-.page-wrapper-menu {
-	padding: 0 10px;
-	margin: 0 auto;
-	max-width: 1800px;
-}
-
 .social-icon{
 	transition: all .2s;
 	}
@@ -185,7 +179,6 @@ small, .text_small {font-size: 0.8rem;}
 
 .menu h3{
 	font-size: 1.7rem;
-	padding: 0;
 	font-weight: bold;
 }
 
