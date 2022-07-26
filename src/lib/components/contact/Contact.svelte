@@ -6,7 +6,7 @@
 </script>
 
 <section class="contact-component">
-	<section class="contact-wrapper">
+	<div class="contact-wrapper">
 		<h2 id="contact">Let's Connect</h2>
 			<!-- Social Media -->
 			<ul class="icons">
@@ -38,7 +38,7 @@
 				</div>
 			</form>
 		</div>
-	</section>
+	</div>
 </section>
 
 <style>

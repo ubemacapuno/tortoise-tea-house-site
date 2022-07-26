@@ -1,7 +1,7 @@
 <script>
 	// import Gallery from 'svelte-image-gallery'
 </script>
-<div class="gallery-component">
+<section class="gallery-component">
     <h2>Gallery</h2>
     <div class="photo-grid">
         <div class="card card3" alt="Tortoise Tea House Combo 3"></div>
@@ -14,7 +14,7 @@
         <div class="card card8" alt="Caramel Macchiato With Extra Caramel"></div>
         <div class="card card9" alt="Mocha Latte With Whipped Cream"></div>
     </div>
-</div>
+</section>
 
 
 <style>

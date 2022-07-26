@@ -8,30 +8,32 @@
 	import Coffee from '$lib/components/menu/Coffee.svelte';
 	import Gallery from '$lib/components/gallery/Gallery.svelte';
 	import Lazyloadgallery from '$lib/components/gallery/Lazyloadgallery.svelte';
+	import Eric from '$lib/components/gallery/LazyLoadPlaceholder.svelte'
 	import Wall from '$lib/images/gallery/gallery-wall.jpg'
 	import Seo from '$lib/components/Seo.svelte'
 </script>
 
 <Seo pathname="/" />
 
-<section class="about-us">
-	<section class="index-header">
-	<h2 id="about">About Us</h2>
-	</section>
-	<section class="index-body">
+<section class="about-us" id="about">
+	<div class="index-header">
+	<h2>About Us</h2>
+	</div>
+	<div class="index-body">
 		<img src={Wall} class="about-img index-left" alt="Test">
-		<section class="index-right">
+		<div class="index-right">
 			<p>Boba tea shop offering hand crafted drinks including milk teas, fruit teas, milkshakes, and more!</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos aliquam dolores quaerat itaque quasi sunt? Sunt odio nulla omnis nostrum incidunt quo consequuntur ea voluptatem possimus, laudantium vitae minus.</p>
-		</section>
-	</section>
+		</div>
+	</div>
 </section>
 <div class="page-wrapper-menu">
 	<!-- <Gallery /> -->
-	<Lazyloadgallery />
-	<section class="index-header">
-		<h2 id="menu">Menu</h2>
+	<Eric />
+	<!-- <Lazyloadgallery /> -->
+	<section id="menu" class="index-header">
+		<h2>Menu</h2>
 	</section>
 </div>
 	<Specialty />
