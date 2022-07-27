@@ -17,7 +17,7 @@
 		<h4>Let us know how we're doing!</h4>
 		<div class="contact-card">
 			<form name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-				<input type="hidden" name="contact-form" value="contact-form" />
+				<input type="hidden" name="form-name" value="test" />
 				<div class="fields">
 					<div class="field half">
 						<p class="contact-form">Name</p>
