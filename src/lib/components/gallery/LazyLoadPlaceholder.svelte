@@ -28,7 +28,7 @@
     
     <style>
         .gallery-component{
-            padding: 100px 0;
+            padding: 50px 0 100px 0;
         }
         h2{
             text-align: center;
