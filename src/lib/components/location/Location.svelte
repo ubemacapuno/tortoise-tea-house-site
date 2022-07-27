@@ -57,7 +57,7 @@ a, .hours{
     font-weight: bold;
     transition: all 0.2s;
     letter-spacing: 1px;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
 }
 a:hover{
     color: var(--hover-color);
@@ -66,7 +66,7 @@ span{
     text-align: left;
     padding-bottom: 0.5rem;
 }
-iframe{
+.address, .phone{
     margin-top: 2rem;
 }
 
@@ -91,6 +91,7 @@ iframe{
     padding-bottom: 56.25%;
     position: relative;
     margin: 0 auto;
+    margin-top: 4rem
 }
 
 .map-responsive iframe {
