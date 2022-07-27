@@ -16,8 +16,8 @@
 			</ul>
 		<h4>Let us know how we're doing!</h4>
 		<div class="contact-card">
-			<form name="contact-form-test" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-				<input type="hidden" name="form-name" value="test" />
+			<form name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+				<input type="hidden" name="contact-form" value="contact-form" />
 				<div class="fields">
 					<div class="field half">
 						<p class="contact-form">Name</p>
@@ -56,7 +56,7 @@
 	}
 	.contact-component {
 		background-image: linear-gradient(to right top,var(--primary-color),var(--tertiary-color),var(--secondary-color));
-		padding: 100px 0;
+		padding: 50px 0 100px 0;
 	}
 
 	.contact-wrapper {

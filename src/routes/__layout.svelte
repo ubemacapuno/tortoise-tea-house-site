@@ -8,14 +8,14 @@
 </script>
 <MobileHeader />
 <Header />
-<div class="slot-background">
+<!-- <div class="slot-background"> -->
 	<slot />
-</div>
+<!-- </div> -->
 <Contact />
 <Location />
 <Footer />
 <style>
-.slot-background {
+/* .slot-background {
 	background-color: var(--secondary-color);
-}
+} */
 </style>

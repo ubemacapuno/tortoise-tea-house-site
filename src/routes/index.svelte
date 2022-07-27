@@ -15,7 +15,8 @@
 
 <Seo pathname="/" />
 
-<section class="about-us" id="about">
+<!-- About Us Section -->
+<section id="about" class="about-us">
 	<div class="index-header">
 	<h2>About Us</h2>
 	</div>
@@ -28,30 +29,45 @@
 		</div>
 	</div>
 </section>
-
-<div class="page-wrapper-gallery">
-		<!-- <Gallery /> -->
-	<LazyLoadPlaceholder />
-		<!-- <Lazyloadgallery /> -->
-</div>
-<div class="page-wrapper">
-	<section id="menu" class="index-header">
-		<h2>Menu</h2>
-	</section>
-	<Specialty />
-	<MilkTea />
-	<FruitTea />
-	<Toppings />
-	<Coffee />
-	<Teas />
-</div>
+<!-- Gallery Section -->
+<section class="gallery-background">
+	<div class="page-wrapper-gallery">
+			<!-- <Gallery /> -->
+		<LazyLoadPlaceholder />
+			<!-- <Lazyloadgallery /> -->
+	</div>
+</section>
+<!-- Menu section -->
+<section id="menu" class="menu-background">
+	<div class="page-wrapper">
+		<div class="index-header">
+			<h2 class="menu-title">Menu</h2>
+			<Specialty />
+			<MilkTea />
+			<FruitTea />
+			<Toppings />
+			<Coffee />
+			<Teas />
+		</div>
+	</div>
+</section>
 
 
 <style>
+	.gallery-background {
+		background-color: var(--background-color);
+	}
+	.menu-background{
+		background-color: var(--background-color);
+		padding-top: 50px;
+	}
+	.menu-title{
+		color: black;
+	}
 	.page-wrapper-gallery {
 		padding: 0 10px;
 		margin: 0 auto;
-		max-width: 900px;
+		max-width: 945px;
 	}
 	#about, .index-right p {
 		color: var(--pure-white);
@@ -66,7 +82,8 @@
 		background-repeat: no-repeat;
 		background-size: auto;
 		background-attachment:fixed;
-		padding: 100px 0;
+		padding: 50px 0 100px 0;
+
 	}
 	.about-img {
 			margin: 1rem;
@@ -74,10 +91,6 @@
 			max-width: 90%;
 			border-radius: 3%;
 		}
-	h2{
-		margin-top: 0;
-		padding-top: 1rem;
-	}
 	.index-header {
 		text-align: center;
 	}
