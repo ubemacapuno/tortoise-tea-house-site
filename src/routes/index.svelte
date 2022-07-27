@@ -28,12 +28,13 @@
 		</div>
 	</div>
 </section>
-<div class="page-wrapper">
-	<div class="page-wrapper-gallery">
+
+<div class="page-wrapper-gallery">
 		<!-- <Gallery /> -->
-		<LazyLoadPlaceholder />
+	<LazyLoadPlaceholder />
 		<!-- <Lazyloadgallery /> -->
-	</div>
+</div>
+<div class="page-wrapper">
 	<section id="menu" class="index-header">
 		<h2>Menu</h2>
 	</section>
@@ -48,6 +49,8 @@
 
 <style>
 	.page-wrapper-gallery {
+		padding: 0 10px;
+		margin: 0 auto;
 		max-width: 900px;
 	}
 	#about, .index-right p {
