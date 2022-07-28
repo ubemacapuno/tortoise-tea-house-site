@@ -92,7 +92,7 @@
                     <img class="menu-item-image" src="" alt="Night Sky Lemonade">
                     <div class="menu-item-text">
                         <h5 class="menu-item-heading">
-                            <span class="menu-item-name">Mashed Taro</span>
+                            <span class="menu-item-name">Night Sky Lemonade</span>
                             <span class="menu-item-price">3.50</span>
                         </h5>
                     </div>
