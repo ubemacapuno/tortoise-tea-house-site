@@ -7,6 +7,14 @@
 
             <div class="menu-group">
                 <!--Menu items Below-->
+                <div class="menu-item">
+                    <div class="menu-item-text">
+                        <h5 class="menu-item-heading">
+                            <span class="menu-item-name">Iced Tea</span>
+                            <span  class="menu-item-price">4.00</span>
+                        </h5>
+                    </div>
+                </div>   
 
                 <div class="menu-item">
                     <div class="menu-item-text">

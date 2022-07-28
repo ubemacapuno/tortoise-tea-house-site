@@ -94,6 +94,9 @@
 		border-radius: 50%;
 		border: 1px solid var(--color-transparent);
 		margin: 3rem 0 1rem 0;
+		/* animation: fadeInAnimation ease 3s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards; */
 	}
 	.location-card,
 	.phone-card {
@@ -111,6 +114,8 @@
 	}
 	.cards {
 		margin: 2rem 0;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
 	}
 	.card-detail-alternate {
 		border-radius: 25px;
@@ -181,6 +186,14 @@
 		.wrapper {
 		padding-bottom: 170px;
 	}
-		
 	}
+/* animation for large-logo fade-in:   */
+		/* @keyframes fadeInAnimation {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	} */
 </style>

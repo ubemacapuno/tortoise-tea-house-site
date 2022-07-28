@@ -45,9 +45,9 @@
 			<Specialty />
 			<MilkTea />
 			<FruitTea />
-			<Toppings />
-			<Coffee />
 			<Teas />
+			<Coffee />
+			<Toppings />
 		</div>
 	</div>
 </section>
