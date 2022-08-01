@@ -14,9 +14,27 @@ This website is for the Tortoise Tea House shop in Phoenix, AZ.
 
 Svelte/SvelteKit, JavaScript/HTML/CSS
 
-Please be sure to checkout [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), and 
+Please be sure to checkout [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), and install the dependencies either using NPM or Yarn:
 
-## `npm -install`
+Using NPM:
+
+```bash
+# Install dependencies
+$ npm install
+
+# Start development server
+$ npm run dev
+```
+
+Using Yarn:
+
+```bash
+# Install dependencies
+$ yarn
+
+# Start development server
+$ yarn dev
+```
 
 ## Optimizations:
 (Work in Progress)
