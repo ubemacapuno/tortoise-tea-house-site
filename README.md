@@ -35,9 +35,8 @@ $ yarn
 # Start development server
 $ yarn dev
 ```
+## Lessons Learned:
+Incorporated lazy-loading on the gallery images. If the main image has not yet finished loading, then a placeholder image will be displayed. If the image is loaded, then the loaded image will then display.
 
 ## Optimizations:
-(Work in Progress)
-
-## Lessons Learned:
-(Work in Progress)
+Incorporate intersection-observer on the gallery image, so that loading occurs first on images that are currently in-view by the user.
