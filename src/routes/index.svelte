@@ -21,9 +21,8 @@
 	<div class="index-body">
 		<img src={Wall} class="about-img index-left" alt="Test">
 		<div class="index-right">
-			<p>Boba tea shop offering hand crafted drinks including milk teas, fruit teas, milkshakes, and more!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum dolore aperiam ea minima ipsam aut voluptatibus tenetur eveniet dolorum, iste labore odit nobis error quos? Illo, iusto eius. Obcaecati.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos aliquam dolores quaerat itaque quasi sunt? Sunt odio nulla omnis nostrum incidunt quo consequuntur ea voluptatem possimus, laudantium vitae minus.</p>
+			<p>Tortoise Tea House is a locally owned drink shop that brings unique and creative flavors to North Phoenix. We combine our Asian heritage and Arizona influences to create traditional flavors with a modern twist.</p>
+			<p>Our mission is to provide new and exciting creations with fresh ingredients and unique flavors. Our space and drinks are designed to create good vibes and leave everyone who visits with a memorable experience. We can't wait to share our passion for taste and creativity with you!</p>
 		</div>
 	</div>
 </section>
