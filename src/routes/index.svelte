@@ -6,8 +6,6 @@
 	import FruitTea from '$lib/components/menu/FruitTea.svelte';
 	import MilkTea from '$lib/components/menu/MilkTea.svelte';
 	import Coffee from '$lib/components/menu/Coffee.svelte';
-	import Gallery from '$lib/components/gallery/Gallery.svelte';
-	import Lazyloadgallery from '$lib/components/gallery/Lazyloadgallery.svelte';
 	import LazyLoadPlaceholder from '$lib/components/gallery/LazyLoadPlaceholder.svelte'
 	import Wall from '$lib/images/gallery/gallery-wall.jpg'
 	import Seo from '$lib/components/Seo.svelte'
@@ -32,9 +30,7 @@
 <!-- Gallery Section -->
 <section class="gallery-background">
 	<div class="page-wrapper-gallery">
-			<!-- <Gallery /> -->
 		<LazyLoadPlaceholder />
-			<!-- <Lazyloadgallery /> -->
 	</div>
 </section>
 <!-- Menu section -->

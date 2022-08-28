@@ -14,12 +14,29 @@ This website is for the Tortoise Tea House shop in Phoenix, AZ.
 
 Svelte/SvelteKit, JavaScript/HTML/CSS
 
-Please be sure to checkout [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), and 
+Please be sure to checkout [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), and install the dependencies either using NPM or Yarn:
 
-## `npm -install`
+Using NPM:
+
+```bash
+# Install dependencies
+$ npm install
+
+# Start development server
+$ npm run dev
+```
+
+Using Yarn:
+
+```bash
+# Install dependencies
+$ yarn
+
+# Start development server
+$ yarn dev
+```
+## Lessons Learned:
+Incorporated lazy-loading on the gallery images. If the main image has not yet finished loading, then a placeholder image will be displayed. If the image is loaded, then the loaded image will then display.
 
 ## Optimizations:
-(Work in Progress)
-
-## Lessons Learned:
-(Work in Progress)
+Incorporate intersection-observer on the gallery image, so that loading occurs first on images that are currently in-view by the user.
